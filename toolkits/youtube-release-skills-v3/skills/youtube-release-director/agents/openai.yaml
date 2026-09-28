@@ -1,0 +1,12 @@
+interface:
+  display_name: "YouTube Release Director"
+  short_description: "Prepares and validates a complete YouTube release package"
+  icon_small: assets/icon.svg
+  icon_large: assets/icon.svg
+policy:
+  products:
+  - chatgpt
+  - codex
+  - api
+  - atlas
+  allow_implicit_invocation: true

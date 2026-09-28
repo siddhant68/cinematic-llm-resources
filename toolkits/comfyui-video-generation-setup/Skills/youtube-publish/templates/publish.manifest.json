@@ -1,0 +1,18 @@
+{
+  "video": "master.mp4",
+  "title": "Your AI light has no source. That's why it breaks.",
+  "description": "description.txt",
+  "thumbnail": "thumb.jpg",
+
+  "tags": ["AI filmmaking", "cinematic lighting", "ComfyUI", "comfy ui",
+           "LTX-2.5", "LTX 2.5", "AI cinematography", "motivated lighting"],
+  "category": "Science & Technology",
+  "playlist": null,
+
+  "made_for_kids": false,
+  "altered_content": false,
+
+  "visibility": "private",
+
+  "pinned_comment": "The rule in one line: if you can't say where the light is coming from, the model can't keep it consistent between shots.\n\nWhich breaks your generations most — light, continuity, or blocking?"
+}

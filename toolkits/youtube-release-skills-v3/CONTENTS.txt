@@ -1,0 +1,22 @@
+YouTube release skills v3
+Updated: 2026-09-12
+
+Start:
+README.md
+PASTE_THIS_FOR_YOUTUBE_RELEASE.md
+YOUTUBE_RELEASE_INPUT_TEMPLATE.json
+CHANNEL_PROFILE_TEMPLATE.json
+YOUTUBE_FIRST_TIME_SETUP.md
+RESEARCH_NOTES_AND_SOURCES.md
+VALIDATION_REPORT.md
+CHECKSUMS.sha256
+
+Skills:
+skills/youtube-release-director
+skills/youtube-thumbnail-builder
+skills/youtube-api-publisher
+skills/youtube-studio-finisher
+skills/youtube-launch-optimizer
+
+Installable archives:
+installable/<skill-name>/skill.zip

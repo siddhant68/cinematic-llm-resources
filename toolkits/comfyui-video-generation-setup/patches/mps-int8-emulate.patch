@@ -1,0 +1,124 @@
+diff --git a/comfy/model_management.py b/comfy/model_management.py
+index ff963eb..ee591e3 100644
+--- a/comfy/model_management.py
++++ b/comfy/model_management.py
+@@ -1998,6 +1998,18 @@ def supports_mxfp8_compute(device=None):
+ 
+     return True
+ 
++def supports_int8_compute(device=None):
++    # torch._int_mm has no Metal kernel. On MPS it silently falls back to the CPU
++    # (via PYTORCH_ENABLE_MPS_FALLBACK), which round-trips every quantized linear
++    # off the GPU and is far slower than dequantizing to bf16 and doing the matmul
++    # on-device. Report int8 matmul as unsupported so the mixed-precision ops fall
++    # back to the emulated (dequantize + full-precision) path, which stays on MPS.
++    # Weights remain stored as int8, so the memory saving is preserved.
++    if is_device_mps(device) or mps_mode():
++        return False
++
++    return True
++
+ def supports_fp64(device=None):
+     if is_device_mps(device):
+         return False
+diff --git a/comfy/ops.py b/comfy/ops.py
+index ff64aad..8bc45de 100644
+--- a/comfy/ops.py
++++ b/comfy/ops.py
+@@ -968,7 +968,11 @@ def linear_input_act(linear, x, input_act):
+     if (comfy.model_management.in_training
+             or not isinstance(weight, QuantizedTensor)
+             or weight._layout_cls != "TensorWiseINT8Layout"
++            or getattr(linear, "_full_precision_mm", False)
+             or getattr(weight._params, "transposed", False)):
++        # _full_precision_mm means this device has no native INT8 matmul (e.g. MPS,
++        # where torch._int_mm silently falls back to the CPU). Take the regular
++        # Linear.forward, which dequantizes and keeps the matmul on-device.
+         return linear(INPUT_ACT_EAGER[input_act](x))
+ 
+     # want_requant keeps a vbar-streamed layer on the INT8 path when a LoRA is
+@@ -1325,6 +1329,14 @@ def mixed_precision_ops(quant_config={}, compute_dtype=torch.bfloat16, full_prec
+                 return _quantized_weight_state_dict(self, sd, prefix, extra_quant_params=("input_scale", "pre_quant_scale"))
+ 
+             def _forward(self, input, weight, bias):
++                if self._full_precision_mm and isinstance(weight, QuantizedTensor):
++                    # This device has no native kernel for the weight's quantized
++                    # format (e.g. INT8 on MPS, where torch._int_mm falls back to
++                    # the CPU). Dequantize here so F.linear stays on-device rather
++                    # than dispatching through QuantizedTensor.__torch_dispatch__
++                    # into the quantized kernel. Storage stays quantized; only this
++                    # transient copy is full precision.
++                    weight = weight.dequantize().to(dtype=input.dtype)
+                 return torch.nn.functional.linear(input, weight, bias)
+ 
+             def forward_comfy_cast_weights(
+@@ -1652,6 +1664,7 @@ def pick_operations(weight_dtype, compute_dtype, load_device=None, disable_fast_
+     fp8_compute = comfy.model_management.supports_fp8_compute(load_device) # TODO: if we support more ops this needs to be more granular
+     nvfp4_compute = comfy.model_management.supports_nvfp4_compute(load_device)
+     mxfp8_compute = comfy.model_management.supports_mxfp8_compute(load_device)
++    int8_compute = comfy.model_management.supports_int8_compute(load_device)
+ 
+     if model_config and hasattr(model_config, 'quant_config') and model_config.quant_config:
+         logging.info("Using mixed precision operations")
+@@ -1663,6 +1676,12 @@ def pick_operations(weight_dtype, compute_dtype, load_device=None, disable_fast_
+         if not fp8_compute:
+             disabled.add("float8_e4m3fn")
+             disabled.add("float8_e5m2")
++        if not int8_compute:
++            # No native int8 matmul on this device (e.g. MPS): emulate by
++            # dequantizing to the compute dtype so the matmul stays on-device.
++            disabled.add("int8_tensorwise")
++            disabled.add("convrot_w4a4")
++            disabled.add("asym_w4a8_int8")
+         logging.info("Native ops: {} {}".format(", ".join(QUANT_ALGOS.keys() - disabled), ", emulated ops: {}".format(", ".join(disabled)) if len(disabled) > 0 else ""))
+         return mixed_precision_ops(model_config.quant_config, compute_dtype, disabled=disabled)
+ 
+diff --git a/comfy_api/latest/_input_impl/video_types.py b/comfy_api/latest/_input_impl/video_types.py
+index 34c6143..006e95b 100644
+--- a/comfy_api/latest/_input_impl/video_types.py
++++ b/comfy_api/latest/_input_impl/video_types.py
+@@ -1028,15 +1028,39 @@ class VideoFromComponents(VideoInput):
+             output.mux(packet)
+ 
+             if audio_stream and self.__components.audio:
+-                frame = av.AudioFrame.from_ndarray(waveform.float().cpu().contiguous().numpy(), format='fltp', layout=layout)
++                wf = waveform.float().cpu().contiguous()
++                # A model can emit NaN/Inf in the audio branch. FLAC silently clamps
++                # those to zero, but the AAC encoder rejects the frame outright with
++                # avcodec_send_frame() -> EINVAL (22), which fails the whole save.
++                if not torch.isfinite(wf).all():
++                    bad = int((~torch.isfinite(wf)).sum())
++                    logging.warning(
++                        "Audio waveform contains %d non-finite sample(s); replacing with silence.", bad)
++                    wf = torch.nan_to_num(wf, nan=0.0, posinf=0.0, neginf=0.0)
++                wf = wf.clamp(-1.0, 1.0)
++
++                frame = av.AudioFrame.from_ndarray(wf.numpy(), format='fltp', layout=layout)
+                 frame.sample_rate = source_audio_sample_rate
+                 frame.pts = 0
+                 frames = [frame] if audio_resampler is None else audio_resampler.resample(frame)
+-                for frame in frames:
+-                    output.mux(audio_stream.encode(frame))
+                 if audio_resampler is not None:
+-                    for frame in audio_resampler.resample(None):
+-                        output.mux(audio_stream.encode(frame))
++                    frames = list(frames) + list(audio_resampler.resample(None))
++
++                # Feed the encoder frames of exactly its frame_size. Handing AAC one
++                # frame holding the entire waveform is also an EINVAL.
++                frame_size = getattr(audio_stream.codec_context, "frame_size", 0) or 1024
++                fifo = av.audio.fifo.AudioFifo()
++                for f in frames:
++                    f.pts = None
++                    fifo.write(f)
++                while True:
++                    chunk = fifo.read(frame_size)
++                    if chunk is None:
++                        break
++                    output.mux(audio_stream.encode(chunk))
++                tail = fifo.read()
++                if tail is not None:
++                    output.mux(audio_stream.encode(tail))
+ 
+                 # Flush encoder
+                 output.mux(audio_stream.encode(None))

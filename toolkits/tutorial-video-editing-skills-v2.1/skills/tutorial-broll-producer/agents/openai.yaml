@@ -1,0 +1,12 @@
+interface:
+  display_name: "Tutorial B-roll Producer"
+  short_description: "Plans, sources, licenses, and generates purposeful tutorial B-roll"
+  icon_small: assets/icon.svg
+  icon_large: assets/icon.svg
+policy:
+  products:
+  - chatgpt
+  - codex
+  - api
+  - atlas
+  allow_implicit_invocation: true

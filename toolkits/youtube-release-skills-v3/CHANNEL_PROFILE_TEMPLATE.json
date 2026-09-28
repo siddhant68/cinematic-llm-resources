@@ -1,0 +1,62 @@
+{
+  "schema_version": "1.0",
+  "channel": {
+    "channel_id": null,
+    "handle": "replace-me",
+    "name": "replace-me",
+    "positioning": "Agent-assisted filmmaking and technical GenAI workflows explained by an experienced data scientist.",
+    "primary_language": "en",
+    "timezone": "Asia/Kolkata",
+    "default_category_id": "28",
+    "default_playlist_ids": [],
+    "default_next_video_or_playlist": null
+  },
+  "audience": {
+    "primary_viewer": "replace-me",
+    "secondary_viewer": null,
+    "recurring_problems": [],
+    "search_phrases": [],
+    "audience_promises_to_avoid": []
+  },
+  "brand": {
+    "logo_paths": [],
+    "portrait_paths": [],
+    "font_paths": [],
+    "colors": [],
+    "thumbnail_examples": [],
+    "title_style_notes": "Accurate, specific, useful; balance searchable clarity with browse curiosity.",
+    "description_boilerplate": null,
+    "creator_bio": "Seven years experienced data scientist with a deep interest in filmmaking, building reliable agent-assisted filmmaking workflows in public."
+  },
+  "release_defaults": {
+    "upload_default": "private",
+    "notify_subscribers": true,
+    "made_for_kids": false,
+    "paid_promotion": false,
+    "monetize_if_eligible": true,
+    "pinned_comment_enabled": true,
+    "community_post_enabled": false,
+    "native_ab_test_enabled": true,
+    "end_screen_elements": [
+      "next playlist",
+      "subscribe"
+    ]
+  },
+  "resources": {
+    "default_resource_links": [],
+    "affiliate_links": [],
+    "social_links": [],
+    "required_disclosures": []
+  },
+  "analytics_context": {
+    "comparable_video_ids": [],
+    "historical_title_thumbnail_notes": [],
+    "known_audience_active_times": [],
+    "baseline_metrics_notes": null
+  },
+  "security": {
+    "oauth_client_secrets_path": null,
+    "oauth_token_path": "secure/youtube_token.json",
+    "never_embed_secrets_in_skill_zip": true
+  }
+}

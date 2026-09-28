@@ -1,0 +1,173 @@
+{
+  "schema_version": "1.0",
+  "project": {
+    "id": "tutorial-demo-001",
+    "working_title": "Build a Reliable Tutorial Editing Workflow",
+    "audience": "AI filmmaking and technical tutorial creators",
+    "viewer_outcome": "Understand and reproduce a professional multi-view tutorial edit",
+    "master_editor": "davinci",
+    "rough_cut_editor": "none",
+    "handoff_mode": "resolve_direct",
+    "target": {
+      "width": 1920,
+      "height": 1080,
+      "fps": 30,
+      "aspect_ratio": "16:9",
+      "target_duration_min": null
+    },
+    "preserve_original_aroll": true,
+    "never_use_intermediate_aroll_render": true
+  },
+  "scripts": {
+    "full_script": "inputs/full_script.md",
+    "teleprompter_script": "inputs/teleprompter_script.txt",
+    "transcript": null,
+    "language": "en"
+  },
+  "sources": [
+    {
+      "id": "face_main",
+      "path": "inputs/face_camera.mp4",
+      "role": "face_camera",
+      "audio_role": "scratch",
+      "usage_notes": "Primary trust, claims, emotion, introduction, and conclusion.",
+      "intended_beats": [],
+      "rights_status": "owned"
+    },
+    {
+      "id": "desk_side",
+      "path": "inputs/side_camera.mp4",
+      "role": "side_camera",
+      "audio_role": "scratch",
+      "usage_notes": "Physical work at laptop and orientation, not tiny UI instruction.",
+      "intended_beats": [],
+      "rights_status": "owned"
+    },
+    {
+      "id": "screen_main",
+      "path": "inputs/screen_recording.mp4",
+      "role": "screen_capture",
+      "audio_role": "none",
+      "usage_notes": "Exact reproducible screen demonstration.",
+      "intended_beats": [],
+      "rights_status": "owned"
+    },
+    {
+      "id": "mic_main",
+      "path": "inputs/production_mic.wav",
+      "role": "dialogue_audio",
+      "audio_role": "production",
+      "usage_notes": "Continuous dialogue spine after sync.",
+      "intended_beats": [],
+      "rights_status": "owned"
+    },
+    {
+      "id": "owned_broll_01",
+      "path": "inputs/owned_broll/example.mp4",
+      "role": "owned_broll",
+      "audio_role": "optional_natural_sound",
+      "usage_notes": "Replace with the exact claim, section, or visual role this clip can support.",
+      "intended_beats": [
+        "opening proof of the finished tutorial-editing result"
+      ],
+      "rights_status": "owned"
+    },
+    {
+      "id": "replacement_bg",
+      "path": "inputs/replacement_background.mp4",
+      "role": "background",
+      "audio_role": "none",
+      "usage_notes": "Replacement behind isolated presenter; use subtle motion when looped.",
+      "intended_beats": [],
+      "rights_status": "owned_or_licensed"
+    }
+  ],
+  "background_replacement": {
+    "enabled": true,
+    "source_ids": [
+      "face_main"
+    ],
+    "replacement_source_id": "replacement_bg",
+    "method": "mask_first",
+    "chroma_key_is_local_fallback_only": true,
+    "preserve_hair_and_hands": true,
+    "fallback_to_framed_pip_on_bad_matte": true,
+    "notes": "Chroma key previously failed. Use person/object masking plus holdout masks first."
+  },
+  "broll": {
+    "require_plan_review_before_generation": true,
+    "allow_web_search": true,
+    "allow_verified_free_downloads": true,
+    "commercial_use_only": true,
+    "owned_media_first": true,
+    "permitted_starting_sources": [
+      "Pexels",
+      "Pixabay",
+      "Mixkit"
+    ],
+    "prohibited_sources": [
+      "unlicensed YouTube rips",
+      "social media rips",
+      "film or TV clips without permission",
+      "search-result previews"
+    ]
+  },
+  "generation": {
+    "ltx_comfyui": {
+      "enabled": false,
+      "workflow_path": null,
+      "api_or_queue_endpoint": null,
+      "checkpoint_name": "",
+      "checkpoint_license_url": "",
+      "max_generations": 0,
+      "notes": "Zero means prompts only until this is configured."
+    },
+    "higgsfield": {
+      "enabled": false,
+      "broll_credit_cap": 0,
+      "thumbnail_credit_cap": 0,
+      "reserve_fraction": 0.2,
+      "require_current_cost_estimate": true,
+      "require_approval_before_submit": true,
+      "max_attempts_per_asset": 2,
+      "notes": "A zero cap means no paid generation. Keep B-roll and thumbnail budgets separate."
+    }
+  },
+  "audio": {
+    "allow_music_download": true,
+    "allow_sfx_download": true,
+    "preferred_sources": [
+      "YouTube Audio Library",
+      "Mixkit",
+      "Pixabay"
+    ],
+    "dialogue_priority": true,
+    "music_mood_notes": "Minimal technical pulse, no vocals under dense explanation.",
+    "avoid": [
+      "vocals under dense teaching",
+      "constant trailer risers",
+      "whoosh on every camera cut"
+    ]
+  },
+  "graphics": {
+    "brand_reference_path": null,
+    "font_preferences": [],
+    "section_openers": true,
+    "section_memory_anchors": true,
+    "final_section_header_recap": true,
+    "caption_mode": "full_subtitles_plus_selective_emphasis"
+  },
+  "youtube": {
+    "channel_context": "Technical tutorials on agent-assisted filmmaking.",
+    "playlist_context": "Building a reliable AI filmmaking pipeline.",
+    "thumbnail_generation_allowed": false,
+    "upload_default": "private"
+  },
+  "approvals": {
+    "planning_package_reviewed": false,
+    "higgsfield_spend_approved": false,
+    "lookdev_reviewed": false,
+    "full_edit_reviewed": false,
+    "rights_reviewed": false
+  }
+}

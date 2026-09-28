@@ -1,0 +1,23 @@
+{
+  "schema_version": "1.0",
+  "assets": [
+    {
+      "asset_id": "gen-001",
+      "local_path": "assets/generated/gen-001.mp4",
+      "tool": "ltx_comfyui_or_higgsfield",
+      "model_or_checkpoint": "replace-me",
+      "model_version": "replace-me",
+      "model_license_url": "replace-me",
+      "job_id": null,
+      "seed": null,
+      "prompt_id": "replace-me",
+      "reference_asset_ids": [],
+      "illustrative_only": true,
+      "credits_spent": 0,
+      "generated_at": null,
+      "sha256": null,
+      "final_time_ranges": [],
+      "approval_status": "pending"
+    }
+  ]
+}

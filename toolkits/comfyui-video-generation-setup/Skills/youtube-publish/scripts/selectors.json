@@ -1,0 +1,457 @@
+{
+  "_comment": [
+    "Every locator YouTube Studio automation depends on, in one file, so that",
+    "healing a UI change is a patch here rather than a hunt through code.",
+    "",
+    "Each entry: primary locator, ordered fallbacks, and a plain-English",
+    "'expect' used in drift reports. Prefer role+name over css \u2014 Studio's class",
+    "names are minified and rotate on deploy, its ARIA roles do not.",
+    "",
+    "'verified' records whether the locator has actually been resolved against",
+    "a live page by canary.py. Unverified entries are guesses and must not be",
+    "trusted silently."
+  ],
+  "youtube_studio_version_seen": "2026-09-04",
+  "channel_id": "UCRsP3J0Imy_7ER0TW3qIWnQ",
+  "selectors": {
+    "dashboard.upload_button": {
+      "primary": {
+        "role": "button",
+        "name": "Upload videos"
+      },
+      "fallbacks": [
+        {
+          "css": "ytcp-button#upload-button"
+        }
+      ],
+      "expect": "Upload videos button on the channel dashboard",
+      "verified": true
+    },
+    "upload.dialog": {
+      "primary": {
+        "css": "ytcp-uploads-dialog"
+      },
+      "fallbacks": [
+        {
+          "role": "dialog"
+        }
+      ],
+      "expect": "the upload wizard dialog",
+      "verified": true
+    },
+    "upload.file_input": {
+      "primary": {
+        "css": "ytcp-uploads-dialog input[type=file]"
+      },
+      "fallbacks": [
+        {
+          "css": "input[type=file]"
+        }
+      ],
+      "expect": "hidden file input inside the upload dialog",
+      "verified": true,
+      "state": "attached"
+    },
+    "upload.select_files": {
+      "primary": {
+        "role": "button",
+        "name": "Select files"
+      },
+      "fallbacks": [
+        {
+          "css": "#select-files-button"
+        }
+      ],
+      "expect": "Select files button, before a file is attached",
+      "verified": true
+    },
+    "upload.progress": {
+      "primary": {
+        "css": "ytcp-video-upload-progress"
+      },
+      "fallbacks": [
+        {
+          "role": "progressbar"
+        }
+      ],
+      "expect": "upload progress indicator",
+      "verified": true
+    },
+    "upload.error": {
+      "primary": {
+        "text": "Oops, something went wrong."
+      },
+      "fallbacks": [],
+      "expect": "upload failure banner \u2014 presence means the upload failed",
+      "verified": true
+    },
+    "upload.next": {
+      "primary": {
+        "css": "#next-button"
+      },
+      "fallbacks": [
+        {
+          "role": "button",
+          "name": "Next"
+        }
+      ],
+      "expect": "Next, advancing the wizard step",
+      "verified": true
+    },
+    "upload.save": {
+      "primary": {
+        "css": "#done-button"
+      },
+      "fallbacks": [
+        {
+          "role": "button",
+          "name": "Save"
+        }
+      ],
+      "expect": "Save, committing the upload",
+      "verified": true
+    },
+    "upload.close": {
+      "primary": {
+        "role": "button",
+        "name": "Close"
+      },
+      "fallbacks": [
+        {
+          "css": "#close-button"
+        }
+      ],
+      "expect": "Close the upload dialog",
+      "verified": true
+    },
+    "details.title": {
+      "primary": {
+        "css": "#title-textarea #textbox"
+      },
+      "fallbacks": [
+        {
+          "role": "textbox",
+          "name": "Title"
+        }
+      ],
+      "expect": "title field on the Details step",
+      "verified": true
+    },
+    "details.description": {
+      "primary": {
+        "css": "#description-textarea #textbox"
+      },
+      "fallbacks": [
+        {
+          "role": "textbox",
+          "name": "Description"
+        }
+      ],
+      "expect": "description field on the Details step",
+      "verified": true
+    },
+    "details.thumbnail_input": {
+      "primary": {
+        "css": "input#file-loader"
+      },
+      "fallbacks": [
+        {
+          "css": "ytcp-thumbnail-uploader input[type=file]"
+        },
+        {
+          "css": "input[accept*='image/jpeg']"
+        }
+      ],
+      "expect": "thumbnail file input (light DOM, accept=image/jpeg,image/png)",
+      "state": "attached",
+      "verified": true
+    },
+    "details.not_for_kids": {
+      "primary": {
+        "css": "tp-yt-paper-radio-button[name=VIDEO_MADE_FOR_KIDS_NOT_MFK]"
+      },
+      "fallbacks": [
+        {
+          "role": "radio",
+          "name": "No, it's not made for kids"
+        }
+      ],
+      "expect": "the made-for-kids declaration, set to NOT made for kids",
+      "verified": false
+    },
+    "details.show_more": {
+      "primary": {
+        "role": "button",
+        "name": "Show more"
+      },
+      "fallbacks": [
+        {
+          "css": "#toggle-button"
+        }
+      ],
+      "expect": "expands tags, language and other secondary fields",
+      "verified": false
+    },
+    "details.tags": {
+      "primary": {
+        "css": "#tags-container input"
+      },
+      "fallbacks": [
+        {
+          "role": "textbox",
+          "name": "Tags"
+        }
+      ],
+      "expect": "tags input, only present after Show more",
+      "verified": false
+    },
+    "visibility.private": {
+      "primary": {
+        "css": "tp-yt-paper-radio-button[name=PRIVATE]"
+      },
+      "fallbacks": [
+        {
+          "role": "radio",
+          "name": "Private"
+        }
+      ],
+      "expect": "Private visibility radio",
+      "verified": false
+    },
+    "visibility.public": {
+      "primary": {
+        "css": "tp-yt-paper-radio-button[name=PUBLIC]"
+      },
+      "fallbacks": [
+        {
+          "role": "radio",
+          "name": "Public"
+        }
+      ],
+      "expect": "Public visibility radio",
+      "verified": false
+    },
+    "visibility.video_link": {
+      "primary": {
+        "css": "a[href*='youtu.be']"
+      },
+      "fallbacks": [
+        {
+          "css": "a.style-scope.ytcp-video-info"
+        },
+        {
+          "css": "span.video-url-fancy"
+        }
+      ],
+      "expect": "the youtu.be link, shown on the Details step once upload completes",
+      "verified": true
+    },
+    "comment.overflow": {
+      "primary": {
+        "css": "ytd-comment-view-model #action-menu button"
+      },
+      "fallbacks": [
+        {
+          "role": "button",
+          "name": "Action menu"
+        }
+      ],
+      "expect": "the three-dot menu on a comment, on the watch page",
+      "verified": false
+    },
+    "comment.pin": {
+      "primary": {
+        "role": "menuitem",
+        "name": "Pin"
+      },
+      "fallbacks": [
+        {
+          "text": "Pin"
+        }
+      ],
+      "expect": "Pin in the comment overflow menu",
+      "verified": false
+    },
+    "details.thumbnail_upload_button": {
+      "primary": {
+        "role": "button",
+        "name": "Upload file"
+      },
+      "fallbacks": [
+        {
+          "css": "#select-button"
+        }
+      ],
+      "expect": "Upload file button in the Thumbnail row",
+      "verified": true
+    },
+    "upload.step_tabs": {
+      "primary": {
+        "text": "Video elements"
+      },
+      "fallbacks": [],
+      "expect": "wizard step rail: Details / Video elements / Checks / Visibility",
+      "verified": true
+    },
+    "edit.show_more": {
+      "primary": {
+        "css": "#toggle-button"
+      },
+      "fallbacks": [
+        {
+          "role": "button",
+          "name": "Show more"
+        }
+      ],
+      "expect": "expands tags, language, category, license on the edit page",
+      "verified": true
+    },
+    "edit.tags": {
+      "primary": {
+        "css": "input#text-input[aria-label='Tags']"
+      },
+      "fallbacks": [
+        {
+          "css": "input[placeholder='Add tag']"
+        }
+      ],
+      "expect": "tags input, only after Show more",
+      "verified": true
+    },
+    "edit.altered_yes": {
+      "primary": {
+        "css": "tp-yt-paper-radio-button[name=VIDEO_HAS_ALTERED_CONTENT_YES]"
+      },
+      "fallbacks": [],
+      "expect": "altered/synthetic content: Yes",
+      "verified": true
+    },
+    "edit.altered_no": {
+      "primary": {
+        "css": "tp-yt-paper-radio-button[name=VIDEO_HAS_ALTERED_CONTENT_NO]"
+      },
+      "fallbacks": [],
+      "expect": "altered/synthetic content: No",
+      "verified": true
+    },
+    "edit.not_for_kids": {
+      "primary": {
+        "css": "tp-yt-paper-radio-button[name=VIDEO_MADE_FOR_KIDS_NOT_MFK]"
+      },
+      "fallbacks": [],
+      "expect": "made-for-kids: No",
+      "verified": true
+    },
+    "edit.for_kids": {
+      "primary": {
+        "css": "tp-yt-paper-radio-button[name=VIDEO_MADE_FOR_KIDS_MFK]"
+      },
+      "fallbacks": [],
+      "expect": "made-for-kids: Yes",
+      "verified": true
+    },
+    "edit.category": {
+      "primary": {
+        "css": "ytcp-form-select#category ytcp-dropdown-trigger"
+      },
+      "fallbacks": [
+        {
+          "css": "#category"
+        }
+      ],
+      "expect": "video category dropdown",
+      "verified": true
+    },
+    "edit.license": {
+      "primary": {
+        "css": "ytcp-form-select#license ytcp-dropdown-trigger"
+      },
+      "fallbacks": [
+        {
+          "css": "#license"
+        }
+      ],
+      "expect": "license dropdown",
+      "verified": true
+    },
+    "edit.playlist_trigger": {
+      "primary": {
+        "css": "ytcp-video-metadata-playlists ytcp-dropdown-trigger"
+      },
+      "fallbacks": [
+        {
+          "css": "ytcp-text-dropdown-trigger:near(:text('Playlists'))"
+        }
+      ],
+      "expect": "Playlists 'Select' dropdown on the edit page",
+      "verified": true
+    },
+    "edit.title": {
+      "primary": {
+        "css": "#title-textarea #textbox"
+      },
+      "fallbacks": [
+        {
+          "css": "ytcp-social-suggestions-textbox#title-textarea #textbox"
+        },
+        {
+          "css": "div#textbox[aria-label*='title']"
+        }
+      ],
+      "expect": "title box on the edit page",
+      "verified": true
+    },
+    "edit.description": {
+      "primary": {
+        "css": "#description-textarea #textbox"
+      },
+      "fallbacks": [
+        {
+          "css": "ytcp-social-suggestions-textbox#description-textarea #textbox"
+        },
+        {
+          "css": "div#textbox[aria-label*='Tell viewers']"
+        }
+      ],
+      "expect": "description box on the edit page",
+      "verified": true
+    },
+    "edit.save": {
+      "primary": {
+        "css": "#save"
+      },
+      "fallbacks": [
+        {
+          "role": "button",
+          "name": "Save"
+        }
+      ],
+      "expect": "Save button on the edit page",
+      "verified": true
+    },
+    "edit.visibility_trigger": {
+      "primary": {
+        "css": "#privacy-form ytcp-video-visibility-select ytcp-dropdown-trigger"
+      },
+      "fallbacks": [
+        {
+          "css": "ytcp-video-visibility-select"
+        }
+      ],
+      "expect": "visibility selector on the edit page",
+      "verified": false
+    }
+  },
+  "wizard_steps": [
+    "Details",
+    "Video elements",
+    "Checks",
+    "Visibility"
+  ],
+  "notes": {
+    "ab_testing": "Thumbnail row offers Upload file / Select from video / A/B Testing \u2014 A/B IS available on this channel",
+    "thumbnail_limits": "Studio UI states <50MB, JPG/PNG, 1280x720. The Data API thumbnails.set limit is 2MB \u2014 keep under 2MB so both paths work.",
+    "channel_features": "2026-09-04: Intermediate features (custom thumbnails, videos over 15 min, live streaming) are ELIGIBLE but NOT ENABLED on this channel. Needs phone verification at youtube.com/features. Until then thumbnails.set and any upload longer than 15 minutes will fail.",
+    "architecture": "Upload via the wizard with minimal fields, then set everything on the edit page. The wizard's step count varies; the edit page is one stable surface holding every field including tags, category, language, license and the altered-content declaration."
+  }
+}

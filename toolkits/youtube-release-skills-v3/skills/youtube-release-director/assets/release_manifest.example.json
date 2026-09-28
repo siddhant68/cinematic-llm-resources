@@ -1,0 +1,144 @@
+{
+  "schema_version": "1.0",
+  "video_file": "master.mp4",
+  "packaging_plan_file": "packaging_plan.json",
+  "metadata": {
+    "title": "The Editing System That Makes Tutorials Easier to Follow",
+    "description_file": "description.txt",
+    "category_id": "28",
+    "tags": [
+      "video editing workflow",
+      "davinci resolve tutorial",
+      "tutorial video editing"
+    ],
+    "default_language": "en"
+  },
+  "status": {
+    "privacy_status": "private",
+    "intended_final_privacy": "public",
+    "publish_at": null,
+    "self_declared_made_for_kids": false,
+    "contains_synthetic_media": false,
+    "embeddable": true,
+    "public_stats_viewable": true
+  },
+  "upload": {
+    "notify_subscribers": true
+  },
+  "chapters": [
+    {
+      "start_sec": 0,
+      "title": "Why tutorial edits feel amateur"
+    },
+    {
+      "start_sec": 75,
+      "title": "The five-view grammar"
+    },
+    {
+      "start_sec": 190,
+      "title": "Building the edit blueprint"
+    }
+  ],
+  "assets": {
+    "primary_thumbnail": "thumbnails/thumbnail-a-upload.jpg",
+    "thumbnail_variants": [
+      "thumbnails/thumbnail-a-upload.jpg",
+      "thumbnails/thumbnail-b-upload.jpg",
+      "thumbnails/thumbnail-c-upload.jpg"
+    ],
+    "captions": [
+      {
+        "file": "captions/en.srt",
+        "language": "en",
+        "name": "English",
+        "is_draft": false
+      }
+    ]
+  },
+  "playlist_ids": [],
+  "post_publish": {
+    "top_level_comment_file": "review/pinned-comment.txt",
+    "post_comment_via_api": false,
+    "pin_comment": true,
+    "community_post_file": "review/community-post.txt",
+    "community_post_enabled": true
+  },
+  "studio_tasks": {
+    "copyright_checks": true,
+    "monetization_review": true,
+    "end_screen": {
+      "enabled": true,
+      "start_offset_from_end_sec": 15,
+      "elements": [
+        "next playlist",
+        "subscribe"
+      ]
+    },
+    "cards": [
+      {
+        "time_sec": 240,
+        "target": "related playlist",
+        "purpose": "Continue into the complete filmmaking-agent series"
+      }
+    ],
+    "ab_test": {
+      "enabled": true,
+      "mode": "title_and_thumbnail",
+      "title_variants": [
+        "The Editing System That Makes Tutorials Easier to Follow",
+        "Why Your Tutorial Edit Still Feels Amateur",
+        "I Rebuilt My Entire AI Video Editing Workflow"
+      ],
+      "thumbnail_variants": [
+        "thumbnails/thumbnail-a-upload.jpg",
+        "thumbnails/thumbnail-b-upload.jpg",
+        "thumbnails/thumbnail-c-upload.jpg"
+      ]
+    },
+    "pin_comment": true,
+    "community_post": true
+  },
+  "launch_monitoring": {
+    "enabled": true,
+    "checkpoints": [
+      "24h",
+      "72h",
+      "7d"
+    ],
+    "compare_by_traffic_source": true,
+    "do_not_interrupt_active_ab_test": true
+  },
+  "release_gate": {
+    "master_reviewed": false,
+    "metadata_reviewed": false,
+    "packaging_reviewed": false,
+    "rights_cleared": false,
+    "captions_reviewed": false,
+    "disclosures_reviewed": false,
+    "thumbnail_reviewed_on_mobile": false,
+    "thumbnail_variants_reviewed": false,
+    "chapters_verified": false,
+    "production_provenance_reviewed": false,
+    "thumbnail_spend_reviewed": false,
+    "pinned_comment_reviewed": false,
+    "launch_plan_reviewed": false,
+    "private_upload_approved": false,
+    "publish_approved": false
+  },
+  "production_provenance": {
+    "rights_ledger": "production_provenance/rights_ledger.csv",
+    "visual_download_receipts": "production_provenance/visual_download_receipts.json",
+    "audio_rights_manifest": "production_provenance/audio_rights_manifest.json",
+    "audio_download_receipts": "production_provenance/audio_download_receipts.json",
+    "generated_assets_log": "production_provenance/generated_assets_log.json",
+    "thumbnail_generation_spend": "production_provenance/thumbnail_generation_spend.json"
+  },
+  "thumbnail_generation": {
+    "tool": "none",
+    "credit_cap": 0,
+    "reserve_fraction": 0.2,
+    "planned_spend": 0,
+    "actual_spend": 0,
+    "approval_recorded": false
+  }
+}

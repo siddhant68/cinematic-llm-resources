@@ -9,3 +9,11 @@ The [Cinematic Sequence Director skill](skills/cinematic-sequence-director/SKILL
 Created for [@cinematic_llm](https://www.instagram.com/cinematic_llm/). AI imagery is illustrative. Prompts describe the process used for this specific film; results will vary with models and reference images.
 
 The [Instagram publishing guide](instagram-publishing/README.md) documents our repeatable Reel and carousel workflow, with the upload scripts in a separate folder.
+
+## Production toolkits
+
+- [Tutorial video editing skills](toolkits/tutorial-video-editing-skills-v2.1/README.md): eight skills for planning, cutting, finishing, and quality checking a filmed tutorial. Includes editable sources and individual installable ZIPs.
+- [YouTube release skills](toolkits/youtube-release-skills-v3/README.md): five skills for packaging, private upload, Studio review, release, and analytics follow-up. Includes editable sources and individual installable ZIPs.
+- [Local AI video generation setup](toolkits/comfyui-video-generation-setup/README.md): LTX-2.5/ComfyUI notes, scripts, workflows, patches, and skill source snapshots. Adapt the paths and dependencies to your own machine; model weights are not included.
+
+These toolkits are reference materials and starting points. Check current tool versions, model licenses, and account permissions before running scripts or publishing media. Private credentials and local caches are not part of this repository.

@@ -1,0 +1,28 @@
+{
+  "schema_version": "1.0",
+  "download_root": "audio_quarantine",
+  "assets": [
+    {
+      "asset_id": "music-001",
+      "kind": "music",
+      "title": "replace-me",
+      "creator": "replace-me",
+      "source_page_url": "https://example.invalid/audio-page",
+      "direct_download_url": "https://example.invalid/audio.wav",
+      "license_name": "replace-me",
+      "license_url": "https://example.invalid/license",
+      "license_checked_at": "2026-09-10T00:00:00+00:00",
+      "commercial_use": true,
+      "modification_allowed": true,
+      "attribution_required": false,
+      "attribution_text": "",
+      "restrictions": "replace-me",
+      "license_status": "verified",
+      "local_path": "music-001.wav",
+      "sha256": null,
+      "final_time_ranges": [],
+      "approval_status": "pending",
+      "approved_for_download": false
+    }
+  ]
+}

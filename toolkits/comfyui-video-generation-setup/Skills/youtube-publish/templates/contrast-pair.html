@@ -1,0 +1,29 @@
+<meta charset="utf-8">
+<style>
+{{BASECSS}}
+.half{position:absolute;top:0;width:640px;height:720px}
+.left{left:0;background:url("{{IMG_LEFT}}") center/cover no-repeat}
+.right{right:0;background:url("{{IMG_RIGHT}}") center/cover no-repeat}
+.left::after,.right::after{content:"";position:absolute;inset:0}
+.left::after{background:linear-gradient(to bottom,transparent 34%,{{DEEP}}f0 100%)}
+.right::after{background:linear-gradient(to bottom,transparent 34%,{{DEEP}}f0 100%)}
+.divider{position:absolute;left:634px;top:0;width:12px;height:720px;background:{{ACCENT}};z-index:6}
+.word{position:absolute;bottom:62px;z-index:7;width:560px;text-align:center;
+  font-size:{{MAXFONT}}px;text-shadow:0 6px 28px rgba(0,0,0,.85)}
+.wl{left:40px}
+.wr{right:40px;color:{{ACCENT}}}
+.verdict{position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);z-index:8;
+  font-family:{{FONT}};font-weight:800;font-size:44px;letter-spacing:.04em;
+  color:{{DEEP}};background:{{TEXT_COLOR}};padding:12px 22px 10px;border-radius:4px;
+  text-transform:uppercase;display:{{LINE3_DISPLAY}}}
+</style>
+<div class="stage">
+  <div class="half left"></div>
+  <div class="half right"></div>
+  <div class="divider"></div>
+  <span class="eyebrow">{{EYEBROW}}</span>
+  <div class="type word wl">{{LINE1}}</div>
+  <div class="type word wr">{{LINE2}}</div>
+  <div class="verdict">{{LINE3}}</div>
+  <div class="badge-guard"></div>
+</div>

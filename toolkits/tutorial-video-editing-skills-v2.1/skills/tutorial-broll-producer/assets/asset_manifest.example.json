@@ -1,0 +1,24 @@
+{
+  "schema_version": "1.0",
+  "download_root": "assets/quarantine",
+  "assets": [
+    {
+      "id": "stock-001",
+      "asset_type": "video",
+      "source_page_url": "https://example.invalid/asset-page",
+      "direct_download_url": "https://example.invalid/asset.mp4",
+      "output_path": "stock-001.mp4",
+      "creator": "replace-me",
+      "license_name": "replace-me",
+      "license_url": "https://example.invalid/license",
+      "license_checked_at": "2026-09-10T00:00:00+00:00",
+      "commercial_use": true,
+      "modification_allowed": true,
+      "attribution_required": false,
+      "attribution_text": "",
+      "restrictions": "replace-me",
+      "license_status": "verified",
+      "approved_for_download": false
+    }
+  ]
+}

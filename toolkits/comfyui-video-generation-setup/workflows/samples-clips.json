@@ -1,0 +1,22 @@
+[
+  {
+    "out": "s1_lighthouse",
+    "prompt": "Wide cinematic shot on a 35mm lens. A lone stone lighthouse stands on black volcanic rock at the edge of a dark northern sea, its lamp turning slowly in heavy dusk. Storm swell rolls in from the left and breaks white against the base of the tower. Initially the beam sweeps away from camera across low cloud. A moment later it rotates back toward the lens and washes the wet rock in a pale gold bar of light. Spray drifts through the foreground on the wind. The camera drifts slowly to the right and very slightly upward, one steady unbroken dolly move, never fast. Cold blue grey overcast light everywhere, with the lighthouse lamp as the only warm source in the frame. Audio: heavy surf breaking on rock, wind moving across stone, the low distant note of a foghorn."
+  },
+  {
+    "out": "s2_ink",
+    "prompt": "Extreme macro shot on a 100mm lens with very shallow depth of field. A single drop of deep indigo ink enters a tank of still clear water from the top of frame. Initially it holds together as a dense dark sphere. A moment later it begins to unfurl into fine trailing filaments that curl and branch outward through the water. Simultaneously a second paler thread of ink follows it down, and the two drift around each other without fully mixing. The motion is slow and heavy, roughly quarter speed. The camera holds almost completely still, with only the faintest push toward the glass. One soft directional light from the left rim lights the ink and leaves the background in near black. Audio: a deep muffled underwater tone, one soft liquid impact at the very start, nothing else."
+  },
+  {
+    "out": "s3_rainglass",
+    "prompt": "Medium close shot on an 85mm lens with very shallow depth of field. Rain runs down the inside of a cafe window at night. Sharp focus sits on the glass and the beads of water clinging to it. Behind the glass a street of neon signage falls completely out of focus into large soft circles of red and cyan bokeh. Initially one heavy drop breaks at the top of frame and runs the full height of the glass. A moment later a car passes behind and drags a long smear of white light across the background. The camera holds still, with a very slow push toward the glass. Every light source is outside; the interior stays dark. Audio: steady rain on glass, muffled traffic passing, the low hum of an empty room."
+  },
+  {
+    "out": "s4_snowpines",
+    "prompt": "Wide cinematic shot on a 35mm lens. Snow falls straight down through a stand of tall dark pines at blue hour. The ground is deep unbroken powder and the trees recede into pale fog. Initially the frame is completely still and only the falling snow moves. A moment later a soft weight of snow slips from a high branch on the right and breaks apart as it falls. The camera tracks slowly forward between two trunks at walking pace, parallax revealing more forest opening up behind them. Cold blue ambient light throughout, with one faint warm break in the fog far ahead. Audio: near total stillness, the faint hiss of falling snow, one distant bird call."
+  },
+  {
+    "out": "s5_cellist",
+    "prompt": "Medium wide shot on a 50mm lens. A cellist sits alone at the centre of an empty concert hall, lit by a single hard shaft of daylight falling from a high window on the left. Dust hangs and turns slowly in the beam. Initially the bow rests against the strings and the room is completely still. A moment later she draws one long slow stroke across the lower strings and her shoulders settle with the movement. The varnish of the instrument and the edge of her hair catch the light; the rows of empty seats behind her fall into deep shadow. The camera pushes in very slowly at eye level, one unbroken move. Warm daylight against a cool dark hall. Audio: a single sustained cello note with the long natural reverb of a large empty room, faint breath, no accompaniment."
+  }
+]

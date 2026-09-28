@@ -1,0 +1,29 @@
+{
+  "schema_version": "1.0",
+  "templates": [
+    {
+      "id": "MG_SECTION_OPEN",
+      "editor": "davinci",
+      "type": "fusion_title",
+      "required": true
+    },
+    {
+      "id": "MG_MEMORY_ANCHOR",
+      "editor": "davinci",
+      "type": "fusion_title",
+      "required": true
+    },
+    {
+      "id": "MG_UI_CALLOUT",
+      "editor": "davinci",
+      "type": "fusion_composition",
+      "required": true
+    },
+    {
+      "id": "MG_FINAL_RECAP",
+      "editor": "davinci",
+      "type": "fusion_title",
+      "required": true
+    }
+  ]
+}

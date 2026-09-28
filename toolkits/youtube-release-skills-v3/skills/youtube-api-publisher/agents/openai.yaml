@@ -1,0 +1,12 @@
+interface:
+  display_name: "YouTube API Publisher"
+  short_description: "Uploads approved videos safely through the official YouTube API"
+  icon_small: assets/icon.svg
+  icon_large: assets/icon.svg
+policy:
+  products:
+  - chatgpt
+  - codex
+  - api
+  - atlas
+  allow_implicit_invocation: true

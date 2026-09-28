@@ -1,0 +1,35 @@
+# Shared model library, rescued from the old ComfySid desktop install before that
+# install was deleted. ~104 GB. Read-only in practice: nothing is written back.
+# is_default is deliberately NOT set, so new downloads land in this install's own
+# models/ folder (where the LTX-2.5 files live).
+library:
+    base_path: /absolute/path/to/comfy-models/
+    checkpoints: checkpoints/
+    configs: configs/
+    loras: loras/
+    vae: vae/
+    text_encoders: |
+        text_encoders/
+        clip/
+    diffusion_models: |
+        unet/
+        diffusion_models/
+        gguf/
+    clip_vision: clip_vision/
+    style_models: style_models/
+    embeddings: embeddings/
+    diffusers: diffusers/
+    vae_approx: vae_approx/
+    controlnet: controlnet/
+    gligen: gligen/
+    upscale_models: upscale_models/
+    latent_upscale_models: latent_upscale_models/
+    hypernetworks: hypernetworks/
+    photomaker: photomaker/
+    model_patches: model_patches/
+    audio_encoders: audio_encoders/
+    background_removal: background_removal/
+    frame_interpolation: frame_interpolation/
+    geometry_estimation: geometry_estimation/
+    optical_flow: optical_flow/
+    detection: detection/

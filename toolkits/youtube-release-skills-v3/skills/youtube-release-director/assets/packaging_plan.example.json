@@ -1,0 +1,41 @@
+{
+  "schema_version": "1.0",
+  "target_viewer": "Creators making technical tutorial videos with multiple camera and screen sources",
+  "viewer_problem": "Their edits feel like a sequence of cuts rather than a guided story",
+  "viewer_outcome": "Understand and apply a repeatable editing system for structure, B-roll, graphics, audio, and continuity",
+  "primary_discovery_mode": "mixed",
+  "strongest_proof": "Before-and-after edited sequences and the working DaVinci pipeline",
+  "first_30_seconds_payoff": "Shows the immature result, the finished result, and names the system that changed it",
+  "title_thumbnail_pairs": [
+    {
+      "id": "A",
+      "hypothesis": "Outcome/proof",
+      "title": "The Editing System That Makes Tutorials Easier to Follow",
+      "thumbnail_concept": "Clean before/after with the improved structured frame dominant",
+      "thumbnail_text": "THE EDIT WORKS",
+      "evidence_source": "Final master result sequence",
+      "misleading_risk": "Do not imply full automation if manual approvals remain"
+    },
+    {
+      "id": "B",
+      "hypothesis": "Problem/tension",
+      "title": "Why Your Tutorial Edit Still Feels Amateur",
+      "thumbnail_concept": "Cluttered immature frame versus one clear presenter-over-screen composition",
+      "thumbnail_text": "TOO MUCH",
+      "evidence_source": "Actual failed edit and corrected edit",
+      "misleading_risk": "Do not shame viewers or use a fabricated failure"
+    },
+    {
+      "id": "C",
+      "hypothesis": "Process/system",
+      "title": "I Rebuilt My Entire AI Video Editing Workflow",
+      "thumbnail_concept": "Creator plus a simplified five-mode editing system",
+      "thumbnail_text": "5 VIEW SYSTEM",
+      "evidence_source": "Workflow diagram and actual timeline",
+      "misleading_risk": "Keep the diagram legible and truthful"
+    }
+  ],
+  "next_video_or_playlist": "Complete agent-assisted filmmaking playlist",
+  "pinned_comment_job": "Deliver the skill pack and ask which editing stage fails first",
+  "community_post_job": "Show a before/after frame and ask a specific workflow poll"
+}

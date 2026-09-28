@@ -1,0 +1,49 @@
+{
+  "schema_version": "1.0",
+  "video_id": "replace-me",
+  "snapshot_at": "2026-09-13T08:00:00+05:30",
+  "published_at": "2026-09-12T08:00:00+05:30",
+  "period": "24h",
+  "metrics": {
+    "impressions": 0,
+    "views": 0,
+    "views_from_impressions": 0,
+    "impressions_ctr": null,
+    "watch_time_hours": 0,
+    "average_view_duration_seconds": 0,
+    "average_percentage_viewed": null,
+    "subscribers_gained": 0,
+    "likes": 0,
+    "comments": 0,
+    "shares": 0,
+    "end_screen_click_rate": null
+  },
+  "traffic_sources": [
+    {
+      "source": "browse_features",
+      "impressions": 0,
+      "views": 0,
+      "ctr": null,
+      "average_view_duration_seconds": null
+    }
+  ],
+  "retention": {
+    "at_30_seconds": null,
+    "at_60_seconds": null,
+    "notable_dips": [],
+    "notable_spikes": []
+  },
+  "ab_test": {
+    "state": "not_started",
+    "variants": [],
+    "youtube_declared_result": null
+  },
+  "release_integrity": {
+    "hd_processed": true,
+    "chapters_visible": true,
+    "captions_visible": true,
+    "pinned_comment_visible": true,
+    "end_screen_visible": true,
+    "restrictions": []
+  }
+}

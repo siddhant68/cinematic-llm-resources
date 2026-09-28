@@ -1,0 +1,95 @@
+{
+  "schema_version": "1.0",
+  "video": {
+    "master_path": "renders/master.mp4",
+    "final_caption_path": "renders/captions/en.srt",
+    "final_transcript_or_script_path": "inputs/final_script_or_transcript.md",
+    "chapter_timecodes_path": null,
+    "qc_report_path": "renders/qc-report.json",
+    "duration_sec": null,
+    "opening_promise": "replace-me",
+    "strongest_proof": "replace-me",
+    "final_call_to_action": "replace-me"
+  },
+  "audience_and_positioning": {
+    "target_viewer": "replace-me",
+    "viewer_problem": "replace-me",
+    "viewer_outcome": "replace-me",
+    "primary_discovery_mode": "mixed",
+    "search_phrases": [],
+    "why_this_video_is_distinct": "replace-me",
+    "series_or_playlist_context": "replace-me",
+    "next_video_or_playlist": null
+  },
+  "channel": {
+    "channel_profile_path": "CHANNEL_PROFILE.json",
+    "channel_id": null,
+    "channel_handle": null,
+    "playlist_ids": [],
+    "comparable_video_ids": []
+  },
+  "thumbnail": {
+    "source_paths": [
+      "inputs/thumbnail/portrait.png",
+      "inputs/thumbnail/result-frame.png"
+    ],
+    "candidate_count": 3,
+    "text_word_limit": 4,
+    "allow_frame_extraction": true,
+    "allow_generated_elements": false,
+    "higgsfield_credit_cap": 0,
+    "require_mobile_review": true,
+    "brand_reference_path": null
+  },
+  "description_and_resources": {
+    "resource_links": [],
+    "affiliate_links": [],
+    "required_credits": [],
+    "required_disclosures": [],
+    "creator_context": "replace-me",
+    "hashtags": []
+  },
+  "pinned_comment": {
+    "enabled": true,
+    "job": "deliver_resource_or_ask_specific_question",
+    "resource_offer": null,
+    "discussion_question": null,
+    "pin_after_publish": true
+  },
+  "continuation": {
+    "cards": [],
+    "end_screen_enabled": true,
+    "end_screen_duration_sec": 15,
+    "end_screen_elements": [
+      "next playlist",
+      "subscribe"
+    ],
+    "community_post_enabled": false,
+    "community_post_goal": null
+  },
+  "release": {
+    "upload_default": "private",
+    "intended_final_privacy": "public",
+    "publish_at": null,
+    "timezone": "Asia/Kolkata",
+    "notify_subscribers": true,
+    "made_for_kids": false,
+    "contains_synthetic_media": null,
+    "paid_promotion": false,
+    "monetize_if_eligible": true
+  },
+  "account_setup": {
+    "allow_agent_to_enable_api_and_create_oauth_client": true,
+    "oauth_client_secrets_path": null,
+    "oauth_token_path": "secure/youtube_token.json",
+    "allow_agent_to_use_logged_in_studio": true,
+    "advanced_features_enabled": null
+  },
+  "approvals": {
+    "packaging_reviewed": false,
+    "thumbnail_candidates_reviewed": false,
+    "rights_reviewed": false,
+    "private_upload_approved": false,
+    "public_release_approved": false
+  }
+}

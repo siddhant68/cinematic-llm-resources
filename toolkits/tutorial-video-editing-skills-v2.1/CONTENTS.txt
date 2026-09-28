@@ -1,0 +1,40 @@
+Tutorial video editing skill bundle v2.1
+Updated: 2026-09-15
+
+Start here:
+README.md
+FRESH_AGENT_VIDEO_WORKFLOW_README.md
+FRESH_SESSION_HANDOFF_PROMPT.md
+EPISODE_BRIEF_TEMPLATE.json
+EPISODE_BRIEF_EXAMPLE.json
+DAVINCI_MCP_FIRST_TIME_SETUP.md
+CHANGELOG_v2.1.md
+SESSION_LEARNINGS_2026-09_DECISIONS.md
+
+Supporting documents:
+AUDIT_REPORT.md
+EDITOR_DECISION.md
+OPERATING_WORKFLOW.md
+TOOL_ROLES_AND_QUALITY_HANDOFF.md
+RESEARCH_NOTES_AND_SOURCES.md
+VALIDATION_REPORT.md
+
+Editable skills:
+davinci-tutorial-builder
+palmier-tutorial-builder
+tutorial-audio-finish
+tutorial-broll-producer
+tutorial-edit-director
+tutorial-motion-graphics
+tutorial-qc
+tutorial-view-design
+
+Installable archives:
+installable/davinci-tutorial-builder/skill.zip
+installable/palmier-tutorial-builder/skill.zip
+installable/tutorial-audio-finish/skill.zip
+installable/tutorial-broll-producer/skill.zip
+installable/tutorial-edit-director/skill.zip
+installable/tutorial-motion-graphics/skill.zip
+installable/tutorial-qc/skill.zip
+installable/tutorial-view-design/skill.zip

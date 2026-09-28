@@ -1,0 +1,17 @@
+[
+  {
+    "out": "f1_deskplanet",
+    "seconds": 8,
+    "prompt": "Macro shot on a 100mm lens, shallow depth of field. A heavy glass paperweight sits on a dark wooden desk beside a closed notebook and a cold cup of coffee, and inside the glass there is a complete miniature thunderstorm. Tiny grey storm clouds turn slowly inside the sphere and real rain falls in miniature against the inner curve of the glass. Initially the clouds drift gently and the desk is quiet. A moment later a small fork of lightning flickers deep inside the sphere and briefly throws hard light and a sharp shadow of the paperweight across the desk. Simultaneously the rain inside picks up and runs down the inside of the glass. A moment later the storm settles again and the clouds thin, and the last of the lightning fades. The camera pushes in very slowly toward the glass at desk level, one unbroken move. The room is dark and every light in the frame comes from inside the sphere. Audio: a tiny distant rumble of thunder with heavy reverb as if heard through glass, faint rain, the quiet room tone of an empty office at night."
+  },
+  {
+    "out": "f2_signal",
+    "seconds": 4,
+    "prompt": "Medium shot on a 50mm lens. A heavy wood-panelled cathode ray television from the 1970s sits alone on the floor of a dark empty room with peeling wallpaper. Initially the screen is completely black and the room is lit only by faint moonlight from a window off frame left. A moment later the set clicks on and the screen fills with rolling white static that throws harsh flickering light across the floorboards and up the walls. Simultaneously dust lifts and turns in the beam of light coming off the screen. A moment later the static begins to resolve into the coloured bars of a test card and the flicker steadies into a constant glow. The camera holds still, with only the faintest drift toward the set. The television screen is the only real light source in the frame. Audio: a hard electrical click, the loud hiss of analogue static, then a single steady test tone, and the hum of an old transformer."
+  },
+  {
+    "out": "f3_commute",
+    "seconds": 4,
+    "prompt": "Low macro shot on an 85mm lens, lens almost at ground level, very shallow depth of field. A small folded paper boat drifts across a rain puddle on black asphalt, and the puddle holds a perfect mirrored reflection of a full skyscraper skyline at dusk. Initially the water is almost still and the reflected towers hold sharp in the surface. A moment later a single raindrop lands ahead of the boat and sends slow rings outward that bend and ripple the reflected buildings. Simultaneously the little boat rocks and turns slightly as it crosses the frame from left to right. The camera tracks slowly right, staying low and level with the water. Warm window light from the reflected city against the cold wet grey of the road. Audio: light rain on standing water, one clear drop landing, distant traffic and a faraway car horn."
+  }
+]

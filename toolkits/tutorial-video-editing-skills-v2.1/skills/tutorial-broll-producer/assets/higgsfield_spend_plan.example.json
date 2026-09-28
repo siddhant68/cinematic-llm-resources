@@ -1,0 +1,24 @@
+{
+  "schema_version": "1.0",
+  "currency": "Higgsfield credits",
+  "estimate_checked_at": null,
+  "broll": {
+    "credit_cap": 0,
+    "reserve_fraction": 0.2,
+    "planned_spend": 0,
+    "actual_spend": 0,
+    "items": []
+  },
+  "thumbnail": {
+    "credit_cap": 0,
+    "reserve_fraction": 0.2,
+    "planned_spend": 0,
+    "actual_spend": 0,
+    "items": []
+  },
+  "approval": {
+    "plan_shown": false,
+    "broll_spend_approved": false,
+    "thumbnail_spend_approved": false
+  }
+}

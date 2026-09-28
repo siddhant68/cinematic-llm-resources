@@ -1,0 +1,94 @@
+{
+  "schema_version": "1.0",
+  "project_id": "tutorial-demo-001",
+  "dialogue": {
+    "source_id": "mic_main",
+    "target_house_lufs_min": -16.0,
+    "target_house_lufs_max": -14.0,
+    "true_peak_ceiling_dbtp": -1.0
+  },
+  "sources": [
+    {
+      "id": "music-001",
+      "kind": "music",
+      "title": "Replace me",
+      "local_path": "assets/audio/music-001.wav",
+      "license_status": "verified",
+      "attribution_required": false
+    },
+    {
+      "id": "sfx-001",
+      "kind": "sfx",
+      "title": "Soft UI tick",
+      "local_path": "assets/audio/sfx-001.wav",
+      "license_status": "verified",
+      "attribution_required": false
+    }
+  ],
+  "sections": [
+    {
+      "id": "s1",
+      "start_sec": 0.0,
+      "end_sec": 45.0,
+      "energy": 3,
+      "dialogue_density": "medium",
+      "conceptual_difficulty": "low",
+      "music_state": "intro"
+    },
+    {
+      "id": "s2",
+      "start_sec": 45.0,
+      "end_sec": 180.0,
+      "energy": 2,
+      "dialogue_density": "dense",
+      "conceptual_difficulty": "high",
+      "music_state": "under_dialogue_sparse"
+    }
+  ],
+  "music_cues": [
+    {
+      "id": "mc-001",
+      "section_id": "s1",
+      "start_sec": 0.0,
+      "end_sec": 8.0,
+      "source_id": "music-001",
+      "state": "intro",
+      "purpose": "Support the result montage without masking the opening line.",
+      "dialogue_density": "light",
+      "relative_to_dialogue_db": -18.0,
+      "duck_db": 3.0,
+      "entry": "start_on_phrase",
+      "exit": "duck_before_promise"
+    },
+    {
+      "id": "mc-002",
+      "section_id": "s2",
+      "start_sec": 50.0,
+      "end_sec": 120.0,
+      "source_id": "music-001",
+      "state": "under_dialogue_sparse",
+      "purpose": "Maintain a subtle pulse under the workflow explanation.",
+      "dialogue_density": "dense",
+      "relative_to_dialogue_db": -24.0,
+      "duck_db": 5.0,
+      "entry": "fade_after_section_title",
+      "exit": "fade_to_silence_before_key_rule"
+    }
+  ],
+  "sfx_cues": [
+    {
+      "id": "sc-001",
+      "time_sec": 3.2,
+      "source_id": "sfx-001",
+      "linked_visual_event": "Hero claim settles into place.",
+      "purpose": "Give one soft tactile landing to the opening claim.",
+      "gain_db": -12.0
+    }
+  ],
+  "rights_manifest": "assets/audio_rights_manifest.json",
+  "review_gate": {
+    "plan_shown": false,
+    "rights_reviewed": false,
+    "lookdev_audio_reviewed": false
+  }
+}

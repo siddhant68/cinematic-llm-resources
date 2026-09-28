@@ -1,0 +1,288 @@
+{
+  "schema_version": "1.0",
+  "project": {
+    "id": "tutorial-demo-001",
+    "editor": "davinci",
+    "fps": 30,
+    "width": 1920,
+    "height": 1080,
+    "duration_sec": 48.0,
+    "audio_spine_source_id": "mic_main",
+    "handoff_mode": "resolve_direct",
+    "preserve_original_aroll": true,
+    "never_use_intermediate_aroll_render": true
+  },
+  "sources": [
+    {
+      "id": "cam_face",
+      "kind": "face_camera",
+      "path": "media/face.mp4"
+    },
+    {
+      "id": "cam_desk",
+      "kind": "side_camera",
+      "path": "media/desk.mp4"
+    },
+    {
+      "id": "screen_main",
+      "kind": "screen_capture",
+      "path": "media/screen.mp4"
+    },
+    {
+      "id": "mic_main",
+      "kind": "dialogue_audio",
+      "path": "media/mic.wav"
+    },
+    {
+      "id": "result_clip",
+      "kind": "broll",
+      "path": "media/result.mp4",
+      "rights_status": "owned"
+    }
+  ],
+  "sections": [
+    {
+      "id": "s1",
+      "title": "The result",
+      "start_sec": 0.0,
+      "end_sec": 12.0,
+      "viewer_outcome": "See the finished result and understand the promise.",
+      "viewer_question": "See the finished result and understand the promise.",
+      "proof_or_payoff": "Defined in linked beats.",
+      "memory_anchors": []
+    },
+    {
+      "id": "s2",
+      "title": "How it works",
+      "start_sec": 12.0,
+      "end_sec": 38.0,
+      "viewer_outcome": "Follow the exact on-screen workflow.",
+      "viewer_question": "Follow the exact on-screen workflow.",
+      "proof_or_payoff": "Defined in linked beats.",
+      "memory_anchors": []
+    },
+    {
+      "id": "s3",
+      "title": "Takeaway",
+      "start_sec": 38.0,
+      "end_sec": 48.0,
+      "viewer_outcome": "Remember the operating rule and next action.",
+      "viewer_question": "Remember the operating rule and next action.",
+      "proof_or_payoff": "Defined in linked beats.",
+      "memory_anchors": []
+    }
+  ],
+  "beats": [
+    {
+      "id": "b1",
+      "section_id": "s1",
+      "start_sec": 0.0,
+      "end_sec": 5.5,
+      "narrative_function": "hook",
+      "spoken_idea": "Here is the final output.",
+      "purpose": "Show proof before explanation.",
+      "primary_view": "broll",
+      "visual_source_ids": [
+        "result_clip"
+      ],
+      "audio_source_id": "mic_main",
+      "transition_in": {
+        "type": "none",
+        "duration_frames": 0,
+        "reason": "Cold open."
+      },
+      "confidence": 0.95,
+      "review_required": false,
+      "continuity_bridge": {
+        "type": "none",
+        "reason": "Cold open."
+      },
+      "retention": {
+        "device": "information_change",
+        "reason": "Show proof before explanation."
+      }
+    },
+    {
+      "id": "b2",
+      "section_id": "s1",
+      "start_sec": 5.5,
+      "end_sec": 12.0,
+      "narrative_function": "promise",
+      "spoken_idea": "I will show how the workflow produces it.",
+      "purpose": "Return to presenter for trust and promise.",
+      "primary_view": "face",
+      "visual_source_ids": [
+        "cam_face"
+      ],
+      "audio_source_id": "mic_main",
+      "transition_in": {
+        "type": "l_cut",
+        "duration_frames": 6,
+        "reason": "Let the proof continue briefly under the promise."
+      },
+      "text": {
+        "role": "section_label",
+        "copy": "FROM PROMPT TO FINISHED SHOT",
+        "reason": "Name the tutorial promise."
+      },
+      "confidence": 0.92,
+      "review_required": false,
+      "continuity_bridge": {
+        "type": "l_cut",
+        "reason": "Let the proof continue briefly under the promise."
+      },
+      "retention": {
+        "device": "information_change",
+        "reason": "Return to presenter for trust and promise."
+      }
+    },
+    {
+      "id": "b3",
+      "section_id": "s2",
+      "start_sec": 12.0,
+      "end_sec": 17.0,
+      "narrative_function": "orientation",
+      "spoken_idea": "I start by opening the project.",
+      "purpose": "Show the physical move into the demonstration.",
+      "primary_view": "desk",
+      "visual_source_ids": [
+        "cam_desk"
+      ],
+      "audio_source_id": "mic_main",
+      "transition_in": {
+        "type": "match_cut",
+        "duration_frames": 0,
+        "reason": "Match hand movement toward the laptop."
+      },
+      "confidence": 0.88,
+      "review_required": false,
+      "continuity_bridge": {
+        "type": "match_cut",
+        "reason": "Match hand movement toward the laptop."
+      },
+      "retention": {
+        "device": "information_change",
+        "reason": "Show the physical move into the demonstration."
+      }
+    },
+    {
+      "id": "b4",
+      "section_id": "s2",
+      "start_sec": 17.0,
+      "end_sec": 31.0,
+      "narrative_function": "demonstration",
+      "spoken_idea": "Choose the source and build the timeline.",
+      "purpose": "Make the interface readable while retaining presenter presence.",
+      "primary_view": "host_over_content",
+      "visual_source_ids": [
+        "screen_main",
+        "cam_face"
+      ],
+      "audio_source_id": "mic_main",
+      "host_pip": {
+        "placement": "auto_clear",
+        "width_fraction": 0.22,
+        "entrance": "fade_slide",
+        "reason": "The explanation benefits from facial presence without obscuring the interface."
+      },
+      "transition_in": {
+        "type": "hard_cut",
+        "duration_frames": 0,
+        "reason": "The screen becomes the information source."
+      },
+      "confidence": 0.9,
+      "review_required": false,
+      "continuity_bridge": {
+        "type": "hard_cut",
+        "reason": "The screen becomes the information source."
+      },
+      "retention": {
+        "device": "information_change",
+        "reason": "Make the interface readable while retaining presenter presence."
+      }
+    },
+    {
+      "id": "b5",
+      "section_id": "s2",
+      "start_sec": 31.0,
+      "end_sec": 38.0,
+      "narrative_function": "verification",
+      "spoken_idea": "Check the timeline before applying effects.",
+      "purpose": "Hold the screen so the viewer can inspect the result.",
+      "primary_view": "screen",
+      "visual_source_ids": [
+        "screen_main"
+      ],
+      "audio_source_id": "mic_main",
+      "transition_in": {
+        "type": "hard_cut",
+        "duration_frames": 0,
+        "reason": "Remove the PIP to create reading space."
+      },
+      "confidence": 0.94,
+      "review_required": false,
+      "continuity_bridge": {
+        "type": "hard_cut",
+        "reason": "Remove the PIP to create reading space."
+      },
+      "retention": {
+        "device": "information_change",
+        "reason": "Hold the screen so the viewer can inspect the result."
+      }
+    },
+    {
+      "id": "b6",
+      "section_id": "s3",
+      "start_sec": 38.0,
+      "end_sec": 48.0,
+      "narrative_function": "takeaway",
+      "spoken_idea": "Every visual must help the viewer understand the idea.",
+      "purpose": "End on the presenter and the core rule.",
+      "primary_view": "face",
+      "visual_source_ids": [
+        "cam_face"
+      ],
+      "audio_source_id": "mic_main",
+      "transition_in": {
+        "type": "graphic_bridge",
+        "duration_frames": 8,
+        "reason": "Mark the final section once, using the approved brand line."
+      },
+      "text": {
+        "role": "hero_claim",
+        "copy": "PURPOSE BEFORE EFFECTS",
+        "reason": "State the operating principle."
+      },
+      "confidence": 0.96,
+      "review_required": false,
+      "continuity_bridge": {
+        "type": "graphic_bridge",
+        "reason": "Mark the final section once, using the approved brand line."
+      },
+      "retention": {
+        "device": "information_change",
+        "reason": "End on the presenter and the core rule."
+      }
+    }
+  ],
+  "style_profile": "style_profile.json",
+  "review_gates": [
+    {
+      "name": "story_cut_reviewed",
+      "status": "pending",
+      "evidence": ""
+    },
+    {
+      "name": "lookdev_reviewed",
+      "status": "pending",
+      "evidence": ""
+    }
+  ],
+  "planning_files": {
+    "broll_plan": "planning/broll_plan.json",
+    "motion_graphics_plan": "planning/motion_graphics_plan.json",
+    "audio_plan": "planning/audio_plan.json",
+    "rights_ledger": "assets/rights_ledger.csv",
+    "asset_manifest": "assets/asset_manifest.json"
+  }
+}

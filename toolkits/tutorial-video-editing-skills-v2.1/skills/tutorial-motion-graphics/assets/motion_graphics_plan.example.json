@@ -1,0 +1,89 @@
+{
+  "schema_version": "1.0",
+  "project_id": "tutorial-demo-001",
+  "style_profile": "style_profile.json",
+  "sections": [
+    {
+      "id": "s1",
+      "title": "Show the Result",
+      "start_sec": 0.0,
+      "end_sec": 45.0,
+      "memory_anchors": [
+        "Proof before explanation"
+      ],
+      "local_recap": false
+    },
+    {
+      "id": "s2",
+      "title": "Build the System",
+      "start_sec": 45.0,
+      "end_sec": 180.0,
+      "memory_anchors": [
+        "Purpose before effects",
+        "One visual job per beat"
+      ],
+      "local_recap": true
+    }
+  ],
+  "graphics": [
+    {
+      "id": "mg-001",
+      "section_id": "s1",
+      "beat_id": "b1",
+      "start_sec": 3.0,
+      "end_sec": 6.5,
+      "template_id": "MG_HERO_CLAIM",
+      "role": "hero_claim",
+      "copy": "PROOF BEFORE EXPLANATION",
+      "information_job": "Name the opening editorial rule.",
+      "source_or_evidence": "The actual result footage visible beneath the text.",
+      "layout_zone": "left_safe",
+      "minimum_readable_hold_sec": 2.0,
+      "motion": {
+        "family": "fade_position",
+        "speed_class": "standard",
+        "direction": "up"
+      },
+      "sfx": {
+        "cue": "low_soft_impact",
+        "linked_visual_event": "Claim settles into final position."
+      },
+      "confidence": 0.94,
+      "review_required": false
+    },
+    {
+      "id": "mg-002",
+      "section_id": "s2",
+      "beat_id": "b4",
+      "start_sec": 64.0,
+      "end_sec": 69.0,
+      "template_id": "MG_MEMORY_ANCHOR",
+      "role": "memory_anchor",
+      "copy": "ONE VISUAL JOB PER BEAT",
+      "information_job": "Give the viewer a phrase to retain after the example.",
+      "source_or_evidence": "B-roll plan comparison on screen.",
+      "layout_zone": "top_left_safe",
+      "minimum_readable_hold_sec": 2.6,
+      "motion": {
+        "family": "mask_reveal",
+        "speed_class": "micro",
+        "direction": "right"
+      },
+      "sfx": null,
+      "confidence": 0.9,
+      "review_required": false
+    }
+  ],
+  "final_recap": {
+    "enabled": true,
+    "start_sec": 180.0,
+    "end_sec": 192.0,
+    "template_id": "MG_FINAL_RECAP",
+    "section_headers": [
+      "Show the Result",
+      "Build the System"
+    ],
+    "conclusion": "PURPOSE BEFORE EFFECTS",
+    "reserve_end_screen_space": true
+  }
+}

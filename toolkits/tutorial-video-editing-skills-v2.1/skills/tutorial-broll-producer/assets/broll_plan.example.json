@@ -1,0 +1,136 @@
+{
+  "schema_version": "1.0",
+  "project_id": "tutorial-demo-001",
+  "planning_gate": {
+    "shown_to_user": false,
+    "paid_generation_approved": false
+  },
+  "budget": {
+    "currency": "Higgsfield credits",
+    "broll_credit_cap": 40,
+    "thumbnail_credit_cap": 10,
+    "reserve_fraction": 0.2,
+    "planned_broll_spend": 12,
+    "planned_thumbnail_spend": 0
+  },
+  "items": [
+    {
+      "id": "br-001",
+      "beat_id": "b1",
+      "section_id": "s1",
+      "spoken_line": "Here is the final result.",
+      "information_job": "evidence",
+      "audience_question": "Does this workflow produce a believable result?",
+      "visual_form": "owned_broll",
+      "source_candidate_ids": [
+        "result_clip"
+      ],
+      "selected_source_id": "result_clip",
+      "placement": {
+        "start_sec": 0.0,
+        "end_sec": 5.5,
+        "timing_mode": "picture_leads"
+      },
+      "host_visibility": "off",
+      "natural_sound": "briefly_feature_then_duck",
+      "texture": {
+        "profile": "natural_proof",
+        "intensity": 0
+      },
+      "entry_bridge": {
+        "type": "cold_open",
+        "reason": "Lead with proof."
+      },
+      "exit_bridge": {
+        "type": "l_cut",
+        "reason": "Let proof continue under the promise."
+      },
+      "rights_status": "owned",
+      "generation": null,
+      "confidence": 0.95,
+      "review_required": false
+    },
+    {
+      "id": "br-002",
+      "beat_id": "b4",
+      "section_id": "s2",
+      "spoken_line": "The agent maps every visual to a teaching purpose.",
+      "information_job": "analogy",
+      "audience_question": "How does the planning system connect speech to visuals?",
+      "visual_form": "generated_video",
+      "source_candidate_ids": [],
+      "selected_source_id": null,
+      "placement": {
+        "start_sec": 22.0,
+        "end_sec": 27.0,
+        "timing_mode": "audio_leads"
+      },
+      "host_visibility": "host_over_content",
+      "natural_sound": "none",
+      "texture": {
+        "profile": "technical_system",
+        "intensity": 1
+      },
+      "entry_bridge": {
+        "type": "j_cut",
+        "reason": "Introduce the idea before the diagram becomes visible."
+      },
+      "exit_bridge": {
+        "type": "graphic_match",
+        "reason": "Match the final node to the next screen focus."
+      },
+      "rights_status": "generated_pending",
+      "generation": {
+        "tool": "higgsfield",
+        "illustrative_only": true,
+        "prompt_id": "gen-001",
+        "model": "select-current-model",
+        "duration_sec": 5,
+        "resolution": "1080p",
+        "outputs": 1,
+        "estimated_credits": 12,
+        "estimate_checked_at": "replace-me",
+        "approval_required": true,
+        "fallback": "Use a Fusion node-flow motion graphic."
+      },
+      "confidence": 0.78,
+      "review_required": true
+    },
+    {
+      "id": "br-003",
+      "beat_id": "b7",
+      "section_id": "s3",
+      "spoken_line": "Now watch the agent place the proof exactly where the claim is made.",
+      "information_job": "demonstration",
+      "audience_question": "Where does the B-roll decision appear in the workflow?",
+      "visual_form": "screen_recording",
+      "source_candidate_ids": [
+        "screen_recording_main"
+      ],
+      "selected_source_id": "screen_recording_main",
+      "placement": {
+        "start_sec": 44.0,
+        "end_sec": 51.0,
+        "timing_mode": "audio_leads"
+      },
+      "host_visibility": "framed_pip",
+      "natural_sound": "none",
+      "texture": {
+        "profile": "clean_digital",
+        "intensity": 0
+      },
+      "entry_bridge": {
+        "type": "j_cut",
+        "reason": "Name the action just before the interface appears."
+      },
+      "exit_bridge": {
+        "type": "cursor_match",
+        "reason": "Use the cursor landing point to return to the host explanation."
+      },
+      "rights_status": "owned",
+      "generation": null,
+      "confidence": 0.92,
+      "review_required": false
+    }
+  ]
+}

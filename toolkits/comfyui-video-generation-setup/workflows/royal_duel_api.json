@@ -1,0 +1,340 @@
+{
+ "1": {
+  "class_type": "UNETLoader",
+  "inputs": {
+   "unet_name": "ltx-2.5-22b-distilled-transformer-comfy-int8-convrot.safetensors",
+   "weight_dtype": "default"
+  }
+ },
+ "2": {
+  "class_type": "CLIPLoader",
+  "inputs": {
+   "clip_name": "gemma4-12b-with-proj-ltx-2.5-comfy-int8-convrot.safetensors",
+   "type": "ltxv",
+   "device": "default"
+  }
+ },
+ "3": {
+  "class_type": "VAELoader",
+  "inputs": {
+   "vae_name": "ltx-2.5-video-vae-bf16.safetensors"
+  }
+ },
+ "4": {
+  "class_type": "VAELoader",
+  "inputs": {
+   "vae_name": "ltx-2.5-audio-vae-bf16.safetensors"
+  }
+ },
+ "5": {
+  "class_type": "CLIPTextEncode",
+  "inputs": {
+   "text": "Photorealistic historical-fantasy cinema, 35mm, shallow depth of field, cool predawn blue-grey light with a narrow shaft of pale gold sunrise coming off the distant sea. A duel between two men on a circular flagstone training yard high on an ancient stone fortress terrace: concentric ring paving, racks of swords and shields against a low crenellated wall, wooden barrels and straw training dummies, a great gothic arched tower doorway at frame left, a medieval coastal city and wide estuary far below. Frame left, a lean young swordsman: shoulder-length wavy golden-blond hair, stubbled weathered face, open-necked cream linen shirt with rolled sleeves under a tan leather waistcoat, dark brown belt, charcoal wool trousers, tall brown leather boots, a blunted steel training sword held low in his right hand. Frame right, a veteran knight: white curly shoulder-length hair and short white beard, ornate gilded bronze-gold scale armour with engraved breastplate and layered gold pauldrons, heavy oatmeal wool cloak over one shoulder fastened with a round medallion clasp, gold-trimmed greaves, a blunted training sword held in a calm centred guard. They stand three metres apart in silent stillness, breath faint in the cold air, the young man's weight shifting back and his grip tightening while the veteran watches his hips. Then the young man explosively drives off his rear foot, crossing the distance in one powerful step as the camera drops into a fast low lateral tracking move, and delivers a single ascending diagonal slash. Hard cut to a tight over-the-shoulder angle: the veteran makes one small foot adjustment and rotates his wrist, and the two blunted blades clash above shoulder height at the centre of frame. The impact is heavy and sudden, two or three tiny sparks bursting into the shaft of sunrise light, the young man's momentum stopping dead through his legs while the older knight moves barely an inch. The blades stay locked and scrape faintly, neither man gaining ground, the young man's breathing heavier. Slow push-in on the crossed steel: a small dangerous half-smile at the corner of the young man's mouth; the veteran does not smile, his eyes sharpening with acknowledgement. Realistic heavy sword physics, natural hair and cloth inertia, controlled motion blur only during the attack.",
+   "clip": [
+    "2",
+    0
+   ]
+  }
+ },
+ "6": {
+  "class_type": "CLIPTextEncode",
+  "inputs": {
+   "text": "cartoon, anime, illustration, video game, 3d render, cgi, plastic skin, waxy skin, extra fighters, crowd, bystanders, spinning, jumping, leaping, flourish, second strike, disarm, duplicated swords, three swords, extra limbs, extra fingers, malformed hands, deformed face, bending blades, rubbery swords, blade clipping through body, magic, glowing effects, energy, explosions, giant sparks, fire, smoke, exaggerated camera shake, whip pan, heavy motion blur smear, text, subtitles, watermark, logo, overexposed, blown highlights, washed out, low quality, blurry",
+   "clip": [
+    "2",
+    0
+   ]
+  }
+ },
+ "7": {
+  "class_type": "EmptyLTXVLatentVideo",
+  "inputs": {
+   "width": 864,
+   "height": 480,
+   "length": 193,
+   "batch_size": 1
+  }
+ },
+ "8": {
+  "class_type": "LTXVEmptyLatentAudio",
+  "inputs": {
+   "frames_number": 193,
+   "frame_rate": 24,
+   "batch_size": 1,
+   "audio_vae": [
+    "4",
+    0
+   ]
+  }
+ },
+ "9": {
+  "class_type": "LTXVConcatAVLatent",
+  "inputs": {
+   "video_latent": [
+    "45",
+    2
+   ],
+   "audio_latent": [
+    "8",
+    0
+   ]
+  }
+ },
+ "10": {
+  "class_type": "LTXVConditioning",
+  "inputs": {
+   "positive": [
+    "5",
+    0
+   ],
+   "negative": [
+    "6",
+    0
+   ],
+   "frame_rate": 24.0
+  }
+ },
+ "11": {
+  "class_type": "LTXVDualCFGGuider",
+  "inputs": {
+   "model": [
+    "1",
+    0
+   ],
+   "positive": [
+    "45",
+    0
+   ],
+   "negative": [
+    "45",
+    1
+   ],
+   "video_cfg": 1.0,
+   "audio_cfg": 1.0
+  }
+ },
+ "12": {
+  "class_type": "KSamplerSelect",
+  "inputs": {
+   "sampler_name": "euler_ancestral"
+  }
+ },
+ "13": {
+  "class_type": "ManualSigmas",
+  "inputs": {
+   "sigmas": "1.0, 0.99375, 0.9875, 0.98125, 0.975, 0.909375, 0.725, 0.421875, 0.0"
+  }
+ },
+ "14": {
+  "class_type": "RandomNoise",
+  "inputs": {
+   "noise_seed": 88123
+  }
+ },
+ "15": {
+  "class_type": "SamplerCustomAdvanced",
+  "inputs": {
+   "noise": [
+    "14",
+    0
+   ],
+   "guider": [
+    "11",
+    0
+   ],
+   "sampler": [
+    "12",
+    0
+   ],
+   "sigmas": [
+    "13",
+    0
+   ],
+   "latent_image": [
+    "9",
+    0
+   ]
+  }
+ },
+ "16": {
+  "class_type": "LTXVSeparateAVLatent",
+  "inputs": {
+   "av_latent": [
+    "15",
+    1
+   ]
+  }
+ },
+ "17": {
+  "class_type": "VAEDecodeTiled",
+  "inputs": {
+   "samples": [
+    "30",
+    2
+   ],
+   "vae": [
+    "3",
+    0
+   ],
+   "tile_size": 512,
+   "overlap": 64,
+   "temporal_size": 32,
+   "temporal_overlap": 8
+  }
+ },
+ "18": {
+  "class_type": "LTXVAudioVAEDecode",
+  "inputs": {
+   "samples": [
+    "16",
+    1
+   ],
+   "audio_vae": [
+    "4",
+    0
+   ]
+  }
+ },
+ "19": {
+  "class_type": "CreateVideo",
+  "inputs": {
+   "images": [
+    "17",
+    0
+   ],
+   "fps": 24.0,
+   "audio": [
+    "18",
+    0
+   ]
+  }
+ },
+ "20": {
+  "class_type": "SaveVideo",
+  "inputs": {
+   "video": [
+    "19",
+    0
+   ],
+   "filename_prefix": "video/ROYAL_DUEL_8s",
+   "format": "auto",
+   "codec": "auto"
+  }
+ },
+ "40": {
+  "class_type": "LoadImage",
+  "inputs": {
+   "image": "duel_A.png"
+  }
+ },
+ "41": {
+  "class_type": "LTXVAddGuide",
+  "inputs": {
+   "positive": [
+    "10",
+    0
+   ],
+   "negative": [
+    "10",
+    1
+   ],
+   "vae": [
+    "3",
+    0
+   ],
+   "latent": [
+    "7",
+    0
+   ],
+   "image": [
+    "40",
+    0
+   ],
+   "frame_idx": 0,
+   "strength": 1.0
+  }
+ },
+ "42": {
+  "class_type": "LoadImage",
+  "inputs": {
+   "image": "duel_C.png"
+  }
+ },
+ "43": {
+  "class_type": "LTXVAddGuide",
+  "inputs": {
+   "positive": [
+    "41",
+    0
+   ],
+   "negative": [
+    "41",
+    1
+   ],
+   "vae": [
+    "3",
+    0
+   ],
+   "latent": [
+    "41",
+    2
+   ],
+   "image": [
+    "42",
+    0
+   ],
+   "frame_idx": 104,
+   "strength": 1.0
+  }
+ },
+ "44": {
+  "class_type": "LoadImage",
+  "inputs": {
+   "image": "duel_B.png"
+  }
+ },
+ "45": {
+  "class_type": "LTXVAddGuide",
+  "inputs": {
+   "positive": [
+    "43",
+    0
+   ],
+   "negative": [
+    "43",
+    1
+   ],
+   "vae": [
+    "3",
+    0
+   ],
+   "latent": [
+    "43",
+    2
+   ],
+   "image": [
+    "44",
+    0
+   ],
+   "frame_idx": 192,
+   "strength": 1.0
+  }
+ },
+ "30": {
+  "class_type": "LTXVCropGuides",
+  "inputs": {
+   "positive": [
+    "45",
+    0
+   ],
+   "negative": [
+    "45",
+    1
+   ],
+   "latent": [
+    "16",
+    0
+   ]
+  }
+ }
+}

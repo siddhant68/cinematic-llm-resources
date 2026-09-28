@@ -1,0 +1,12 @@
+interface:
+  display_name: "Tutorial Video QC"
+  short_description: "Reviews tutorial edits for story, design, audio, and delivery defects"
+  icon_small: assets/icon.svg
+  icon_large: assets/icon.svg
+policy:
+  products:
+  - chatgpt
+  - codex
+  - api
+  - atlas
+  allow_implicit_invocation: true
