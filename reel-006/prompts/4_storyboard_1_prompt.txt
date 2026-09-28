@@ -1,0 +1,22 @@
+Using the two attached images, draw the storyboard of a vertical video scene that runs 15 seconds, laid out 3 by 3 with timings. The first image is the warrior: the reference for his face, heavy build, beard, turban, armour, sword and shield. The second image is the beast and the village: the reference for the creature, the set and the light.
+
+It should read like a real film pre-production board: nine vertical 9:16 panels in a clean grid, 3 across and 3 down, with thin black borders between them. On each panel, in small clean type: the panel number, its timecode, a short shot title in capitals and one short line of action. The pictures come first; the text is small but legible.
+
+Hold these fixed in all nine panels: the warrior's face, heavy build, beard, saffron turban, mail coat, steel chest plates, crimson sash, khanda and round shield, with no crest or emblem anywhere; the beast's spiralling horns, ember eyes, black cracked hide and the storm that clings to it; the village layout, with the cracked sandstone chhatri in the square, the lane of mud houses to the south, the dry well and overturned cart to the east and open dunes to the north; and the low sun in the west. When the camera changes sides, the set and the sun stay where they are.
+
+The story: a monster has been killing everyone in this desert, and the village is empty. One warrior has come alone to end it. He calls it out, and it comes. Every movement he makes lands like thunder: heavy, slow, deliberate and honoured. The beast's presence is overwhelming; it dwarfs him and the whole village.
+
+The nine panels, in order:
+1. (0:00–0:02.5) THE TOLL: extreme wide, high, from the south end of the lane. The empty village at golden hour: torn awnings snapping, an overturned bullock cart, shields and a spear half-buried in drifted sand, vultures circling. No one alive.
+2. (0:02.5–0:04) HE COMES ALONE: wide, camera low to the ground in the lane. He walks north up the lane toward the square; each heavy footfall throws up a burst of sand.
+3. (0:04–0:05.5) THE WEIGHT OF HIM: medium, low angle. He stops beside the chhatri, facing north toward the dunes, the sun raking across him from the west. The wind drops.
+4. (0:05.5–0:06.5) THE BLADE: extreme close detail. His scarred right hand closes on the khanda's grip and draws it; the steel catches the sun.
+5. (0:06.5–0:08) "SHOW YOURSELF!": close-up, low angle. He roars the challenge at the dunes, neck corded, the tail of his turban whipping, sand shaken off his armour.
+6. (0:08–0:09.5) THE ANSWER: environmental wide over his shoulder. A black storm wall rises across the northern horizon, lightning flickering inside it, rolling toward the village.
+7. (0:09.5–0:11) HE DOES NOT STEP BACK: side-profile close-up, facing north. The storm swallows the sun, the warm light dies on his face and a cold flash of lightning lights his eye. He does not blink.
+8. (0:11–0:13) IT STEPS OUT: wide, very low, from behind him. The beast walks out of the storm at the edge of the village, taller than the dunes; he is a small figure beside the chhatri in the foreground.
+9. (0:13–0:15) FACE TO FACE: low two-shot from the east side of the square, both in profile. The beast lowers its head to him; one burning eye is larger than his whole body. He raises the khanda and the shield. Neither moves.
+
+All nine must look like stills from one big-budget epic, taken from a single continuous scene. Do not redesign either character, change the armour or the set, move the sun, add people or emblems, or drift into cartoon, CGI, plastic skin or distorted anatomy. No logos, watermarks or captions other than the panel text.
+
+Aspect ratio: 9:16 (vertical).

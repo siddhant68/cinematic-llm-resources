@@ -1,0 +1,22 @@
+Using the three attached images, draw the storyboard of the next vertical video scene, which runs 20 seconds, laid out 3 by 3 with timings. The first image is the warrior: the reference for his face, heavy build, beard, turban, armour and sword. The second image is the beast: the reference for its horns, ember eyes, cracked black hide and the storm on its back. The third image is the storyboard of the scene before this one: match its look, its panel layout and its type exactly, and start where its last panel ends.
+
+Nine vertical 9:16 panels in a clean grid, 3 across and 3 down, with thin black borders. On each panel, in small clean type: the panel number, its timecode, a short shot title in capitals and one short line of action. The pictures come first; the text is small but legible.
+
+Hold these fixed in all nine panels: his face, heavy build, beard, saffron turban, mail coat, steel chest plates and crimson sash; one straight double-edged khanda in his hands; one round shield, which stays slung on his back the whole time; no crest or emblem anywhere. The beast keeps the same spiralling horns, ember eyes, black cracked hide and the storm clinging to it. The village stays the same: the cracked sandstone chhatri in the square, mud houses to the south, open dunes to the north. The storm has covered the sky, so the light is cold and blue-grey, until a single shaft of low sun from the west breaks through onto him alone.
+
+The story: he has called the beast out and it has come. Now he makes his last charge. He gathers himself, swears an oath, and runs at it; the beast laughs and meets him. Every movement he makes lands like thunder. The beast is overwhelming: at its full height it is many times taller than him.
+
+The nine panels, in order:
+1. (0:00–0:02) THE DISTANCE: wide, from the east side of the square, both in profile. The beast lifts its head and draws back to the north edge of the village, towering into the storm; he stands by the chhatri with open sand between them.
+2. (0:02–0:04.5) ONE BREATH: extreme close-up of his face in profile. Eyes closed, a slow breath out through the beard, grains of sand trembling on his cheek.
+3. (0:04.5–0:07) THE SUN BREAKS THROUGH: low medium. His eyes open; a shaft of low sun cuts through the storm onto him alone; sand lifts off the ground around him in a slow ring; his sash and the tail of his turban rise.
+4. (0:07–0:10) THE OATH: close-up, low angle. He holds the khanda upright in both hands in front of his face and speaks his name, his father's name, and swears the beast falls with him today.
+5. (0:10–0:12) IT LAUGHS: close-up on the beast. Its lips peel back from its teeth in a rolling laugh; lightning gathers between its horns; its eyes flare.
+6. (0:12–0:13.5) THE GROUND BREAKS: extreme low close-up on his boot. It drives down and the hard ground cracks in a star, sand and stones jumping up.
+7. (0:13.5–0:16) HE LAUNCHES: low wide, the camera racing alongside him. He explodes forward across the square, each stride blowing out a burst of sand like a thunderclap, the khanda drawn back.
+8. (0:16–0:18) IT COMES TO MEET HIM: low wide from behind him. The beast drops its horns and charges down at him, laughing, the storm tearing off its back.
+9. (0:18–0:20) THE CLASH: wide, from the east side, both in profile. His blade meets its horns; a ring of force blasts sand and light outward, the chhatri dome bursts apart, and the frame flares white-gold.
+
+All nine must look like stills from the same big-budget epic as the attached board, one continuous scene. Do not redesign either character, give him a second shield, change the sword, change the set or add people or emblems; no cartoon, CGI, plastic skin or distorted anatomy. No logos, watermarks or captions other than the panel text.
+
+Aspect ratio: 9:16 (vertical).
