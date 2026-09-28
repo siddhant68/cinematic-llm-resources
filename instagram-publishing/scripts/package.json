@@ -1,0 +1,12 @@
+{
+  "name": "cinematic-llm-instagram-publisher",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "upload": "node upload.mjs",
+    "test": "node --test"
+  },
+  "dependencies": {
+    "playwright": "^1.58.2"
+  }
+}

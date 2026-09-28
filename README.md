@@ -7,3 +7,5 @@ Explore [Reel 006](reel-006/README.md), [Reel 007](reel-007/README.md), and [Ree
 The [Cinematic Sequence Director skill](skills/cinematic-sequence-director/SKILL.md) is the directing playbook used to write the two video prompts. It fixes set geography, lighting, prop continuity, and camera choices across connected clips.
 
 Created for [@cinematic_llm](https://www.instagram.com/cinematic_llm/). AI imagery is illustrative. Prompts describe the process used for this specific film; results will vary with models and reference images.
+
+The [Instagram publishing guide](instagram-publishing/README.md) documents our repeatable Reel and carousel workflow, with the upload scripts in a separate folder.
