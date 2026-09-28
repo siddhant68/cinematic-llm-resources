@@ -1,0 +1,24 @@
+Using the three attached images, draw the storyboard of a vertical video scene that runs 20 seconds, laid out 3 by 3 with timings. The first image is the woman: the reference for her face, freckles, choppy fringe bob, denim shirt, cream tank top, cord necklace and silver hoops. The second image is the driver: the reference for his face, curls, moustache, cracked brown leather jacket, white T-shirt and steel watch. The third image is the car: the reference for its body, powder-blue paint with rust and wear, cream stripe, number 27 roundels, eight round lamps on the nose, roof rack with a spare wheel, white steel wheels and gravel tyres.
+
+It should read like a real film pre-production board: nine vertical 9:16 panels in a clean grid, 3 across and 3 down, with thin black borders between them. On each panel, in small clean type: the panel number, its timecode, a speed tag (REAL SPEED or SLOW MO 5X), a short shot title in capitals and one short line of action. The pictures come first; the text is small but legible.
+
+The scene is built on one idea: fast, then slow, then fast. The build-up and the landing play at real speed. The jump itself is shot as if on a high-speed camera at 120 frames per second and played back at 24, so it runs five times slower, and that stretched moment is the heart of the scene. The cut back to real speed happens on the exact frame the wheels hit the ground.
+
+Hold these fixed in all nine panels: her face and outfit; his face and outfit; the car exactly as in the third image, with one roof rack, one spare wheel, the stripe and the 27 roundels; he drives from the left-hand seat and she rides in the right-hand passenger seat; the world, which is a red-rock desert canyon where a dirt road runs west onto an old stone arch bridge over a dry ravine, the middle of the bridge fallen away so the broken edge of the near span works as a ramp and the far span carries the road on toward the horizon; and one low golden-hour sun in the west, ahead of the car, the same height, colour and direction in every panel, with the same warm dust haze and long shadows reaching back toward the camera. When the camera changes sides, the canyon, the bridge and the sun stay where they are.
+
+The story: two young people in a battered rally car make a run at a broken bridge and fly it. She is the one being carried out to freedom, and the slow moment belongs to her face.
+
+The nine panels, in order:
+1. (0:00-0:02.5) REAL SPEED. THE RUN: aerial wide from behind and above. The blue coupe tears west down the canyon road toward the broken bridge, a long plume of dust behind it, the low sun ahead.
+2. (0:02.5-0:04.5) REAL SPEED. FLOOR IT: handheld inside the car, over his shoulder. His hand slams the gear lever forward, he grins, and through the windscreen the gap in the bridge rushes closer.
+3. (0:04.5-0:06.5) REAL SPEED. SHE'S IN: handheld medium from the dashboard toward her. She laughs, grips the door frame, hair whipping, and nods at him: go.
+4. (0:06.5-0:07.5) REAL SPEED. THE EDGE: low wide at the broken edge of the near span. The front wheels leave the stone, gravel spraying off the lip.
+5. (0:07.5-0:10) SLOW MO 5X. AIRBORNE: wide side view. The car hangs in the air over the ravine, wheels drooping, with dust, pebbles and chips of stone suspended around it, glowing in the backlight.
+6. (0:10-0:12.5) SLOW MO 5X. THE ORBIT: the camera circles slowly around the nose of the flying car toward her window, floating grit drifting past the lens, sunbeams cutting through the dust.
+7. (0:12.5-0:15.5) SLOW MO 5X. HER MOMENT: close-up of her face at the window. She lets out a held breath into a wide, open laugh, pupils wide, a slow blink, strands of hair floating, her hand reaching out through the drifting dust.
+8. (0:15.5-0:17.5) REAL SPEED. LANDING: hard cut. Low wide from the far span. The wheels slam down, the suspension bottoms out and a burst of dust explodes around the car.
+9. (0:17.5-0:20) REAL SPEED. FREE: wide from behind. The coupe races away down the road into the low sun, her arm out of the window, dust trailing.
+
+All nine must look like stills from one big-screen road movie, taken from a single continuous scene in one light. Do not redesign either person or the car, add a second spare wheel or roof rack, add people, move the sun, or drift into cartoon, CGI, plastic skin or distorted anatomy. No logos, badges, number plates, watermarks or captions other than the panel text.
+
+Aspect ratio: 9:16 (vertical).

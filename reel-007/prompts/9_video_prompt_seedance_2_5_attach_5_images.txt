@@ -1,0 +1,93 @@
+# OUT — one 20-second vertical scene: fast, then slow, then fast
+
+A 20-second vertical 9:16 scene from a big-screen road movie, photoreal, shot like a feature film at golden hour: one continuous sequence with a motivated shot change about every two seconds. Two young people in a battered 1970s rally car make a run at a broken stone bridge in a red-rock desert canyon and fly the gap. The whole scene is built on contrast: the run-up plays at real speed, the flight is filmed on a high-speed camera and plays five times slower, and the landing snaps back to real speed on the exact frame the wheels hit the ground. She is the one being carried out to freedom; the slow-motion moment belongs to her face.
+
+Image 1 is the woman and the strict identity reference: her face with the strong straight dark brows, hazel eyes, the freckles across her nose and cheeks, the wide laughing mouth; her choppy jaw-length brown bob with the blunt uneven fringe; the sun-faded denim shirt with rolled sleeves over a cream ribbed tank top, the thin leather cord necklace, the small silver hoops, the chipped red nails. Image 2 shows her from six camera positions; use it to keep her face identical from every angle, especially in the close-up. Image 3 is the driver and his identity reference: tousled dark-brown curls, heavy brows, the thin moustache and stubble, the sun-worn skin, the cracked brown leather jacket with a white T-shirt beneath it, the steel watch on his left wrist. Image 4 is the car and the authority for its design: a boxy two-door 1970s coupe in rusted powder-blue paint with one cream stripe over the bonnet, roof and boot, the number 27 in a cream roundel on each door, eight round lamps across the nose, a black roof rack with one spare wheel, white steel wheels and chunky gravel tyres. Image 5 is the storyboard of this scene: follow its nine beats in order with the timings written below; it is a plan only, so never show panels, borders, numbers or any text on screen. Keep both faces stable and exactly like their references; never beautify or reshape them.
+
+---
+
+## MASTER GEOGRAPHY — NEVER CHANGE THIS
+
+A red-rock desert canyon at golden hour.
+
+- EAST (behind the car at the start): the dirt road the car arrives on, with its dust plume.
+- WEST (ahead of the car): an old stone arch bridge built of the same red stone as the canyon, spanning a dry ravine. Its middle span has fallen away. The broken end of the near span is the ramp; the far span carries the road on toward the horizon.
+- BELOW: the dry ravine, rocky and dusty, far enough down to feel dangerous.
+- WEST, low in the sky, straight ahead of the car: the sun.
+
+The car always travels west: along the road, off the broken edge, across the gap, onto the far span, and on toward the sun. **THE CAMERA MAY MOVE AND CIRCLE. THE CAR KEEPS ONE DIRECTION OF TRAVEL. THE CANYON, THE BRIDGE AND THE SUN NEVER ROTATE, MIRROR OR REARRANGE.**
+
+## LIGHTING GEOGRAPHY — ONE LIGHT FOR EVERY SHOT
+
+One low golden-hour sun in the west, ahead of the car, the same height, the same warm colour temperature and the same direction in every shot. From behind the car it is a backlight: hot rims along the roof rack, the spare wheel and the roofline, long shadows stretching back toward the camera. From the side it rakes across the car and the faces. On the faces it is a warm key from the front with a rim through the hair. The same fine dust haze fills the air in every shot and glows where the sun passes through it. Shadows keep the same length and direction for all twenty seconds. No shot gets its own light.
+
+## CONTINUITY LEDGER
+
+- The car: exactly as in Image 4 in every shot. One roof rack, one spare wheel, one stripe, number 27 on the doors, eight lamps on the nose. No badges, logos or number plates.
+- Him: in the driver's seat behind the wheel for the whole scene, both hands on the wheel except for one hand on the gear lever in 2.5–4.5 s.
+- Her: in the passenger seat beside him for the whole scene; her window is the side window next to her. She stays inside the car except for her head, shoulder and one arm out of her window.
+- Her hair: loose and windblown at real speed; floating in slow motion; whipped again after the landing.
+- Dust on the car and in the air: builds through the scene, never resets.
+
+---
+
+## 0–7.5 s · REAL SPEED · THE RUN
+
+**0–2.5 s · aerial wide from behind and above (24–28 mm feel).** The blue coupe tears west down the canyon road toward the broken bridge, a long plume of red dust rolling behind it, the sun low ahead. The camera chases fast and slightly high, closing on the car. Real-time motion: gravel spitting from the tyres, the car bucking on the ruts.
+
+**2.5–4.5 s · handheld inside the car, over his shoulder (35 mm feel).** He slams the gear lever forward and floors it; his jaw sets and a crooked grin breaks through; his eyes flick from the road to her and back. Through the dusty windscreen the gap in the bridge rushes closer. The camera shakes with the car.
+
+**4.5–6.5 s · handheld medium from the dashboard toward her (40 mm feel).** She is laughing, breathless, hair whipping across her face; she grips the door frame, her knuckles pale; she looks at him, her eyes wide and bright, and gives one quick nod: go. Fast breathing, a blink, the grin spreading.
+
+**6.5–7.5 s · low wide at the broken edge (24 mm feel).** The camera sits low beside the broken end of the near span. The front wheels leave the stone, gravel spraying off the lip. Still real speed.
+
+## 7.5–15.5 s · SLOW MOTION · THE FLIGHT
+
+**Shot on a high-speed camera at 120 frames per second and played back at 24 frames per second: 5x slow motion, overcranked.** Everything in these eight seconds moves five times slower than real life, smooth and weightless: the car's arc, the tumbling stones, the dust, her hair, her face. This is the heart of the scene.
+
+**7.5–10 s · wide side view (35 mm feel).** The car hangs in the air over the ravine, wheels drooping on their springs, the gap open beneath it. Dust, pebbles and chips of red stone float around it, turning slowly and glowing in the backlight; the sun sits just beyond the roof. Very slow, very smooth drift.
+
+**10–12.5 s · slow orbit (35–50 mm feel).** The camera circles slowly around the nose of the flying car toward her window. Grit drifts past the lens, sunbeams cut through the suspended dust, the eight lamps catch the light. The car stays on its westward arc; only the camera moves.
+
+**12.5–15.5 s · close-up of her face at her window (85 mm feel).** The camera holds steady and close. Micro-acting in slow motion: she lets out a held breath; her pupils widen; a slow blink; her eyes fill with light; the corners of her mouth lift and the laugh opens wide, her cheeks rising and crinkling her eyes; her jaw loosens; strands of her fringe float across her forehead; freckles and skin texture sharp. Her arm is out of the window at arm's length, fingers open, passing slowly through the glowing dust. The sun is warm on her face. She is alive in every frame; no frozen or dead expression.
+
+## 15.5–20 s · REAL SPEED · THE LANDING AND THE RELEASE
+
+**15.5–17.5 s · HARD CUT to real speed · low wide from the far span, facing the car (24 mm feel).** The wheels slam down on the far span, the suspension bottoms out, the body pitches, a burst of dust explodes around the car. Full real-time violence and weight.
+
+**17.5–20 s · wide from behind (28 mm feel).** The coupe races away west down the road into the low sun, fishtails once and straightens, her arm out of her window, a trail of dust glowing gold behind it. The scene ends on the car small against the sun.
+
+---
+
+## SOUND DESIGN
+
+- 0–7.5 s: a roaring engine climbing through the gears, gravel hammering the wheel arches, wind, her breathless laugh, a building rhythm of pounding percussion driving into the jump.
+- 7.5–15.5 s: time stretches. The engine and wind fall away into a deep, slow, low bass swell and a stretched whoosh of air; one slow heartbeat; her breath and laugh slowed and warm; small stones ticking softly as they float.
+- 15.5 s: a hard, full-volume crash of metal, springs and gravel exactly on the landing, the engine roaring back at real speed.
+- 17.5–20 s: the engine howling away, her whoop of joy, the wind.
+No music and no spoken words.
+
+## CAMERA RHYTHM
+
+**aerial chase → handheld over his shoulder → handheld on her → low wide at the edge → slow side view in the air → slow orbit to her window → steady slow close-up of her face → hard cut, low wide landing → wide from behind into the sun**
+
+- A new shot about every two seconds; each shot shows something new.
+- Handheld energy only at real speed; the slow-motion shots are smooth and floating.
+- During the flight the car moves slowly, so the camera may orbit; during her close-up the camera stays still and the face does the work.
+- The only hard cut that must hit exactly is the landing at 15.5 s.
+
+## PERFORMANCE ARC
+
+Nerve and adrenaline (fast breath, grip, the nod) → the lift-off → wonder (held breath, wide pupils, a slow blink) → release (the laugh opening, her hand in the dust) → the jolt of the landing → pure joy (the whoop, the arm out of the window).
+
+## HARD CONTINUITY CONSTRAINTS
+
+- Same two faces as Images 1–3 in every shot; same clothes and hair.
+- The car exactly as Image 4, one spare wheel, one roof rack, number 27.
+- One westward direction of travel; the bridge, canyon and sun fixed in the world.
+- One golden-hour sun, same direction, colour and shadow length, in every shot.
+- Real speed in 0–7.5 s and 15.5–20 s; 5x slow motion only in 7.5–15.5 s.
+- Realistic car physics, suspension, dust and hands; no extra people or vehicles.
+- No text, captions, panels, logos or watermarks on screen.
+
+It should feel like the one moment of a road movie you remember: the world stopping in mid-air around her laugh, then slamming back to full speed.
