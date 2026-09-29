@@ -2,7 +2,7 @@
 
 Images and prompts from the **@cinematic_llm** short films and their making-of tutorials.
 
-Explore [Reel 006](reel-006/README.md), [Reel 007](reel-007/README.md), [Reel 008](reel-008/README.md), and [Reel 010](reel-010/README.md). Each prompt is an individual text file you can copy. The generated reference images, storyboards, and panels are in their Reel folders.
+Explore [Reel 006](reel-006/README.md), [Reel 007](reel-007/README.md), [Reel 008](reel-008/README.md), [Reel 010](reel-010/README.md), and [Reel 011](reel-011-lighting-emotion/README.md). Each prompt is an individual text file you can copy. The generated reference images, storyboards, and panels are in their Reel folders.
 
 The [Cinematic Sequence Director skill](skills/cinematic-sequence-director/SKILL.md) is the directing playbook used to write the two video prompts. It fixes set geography, lighting, prop continuity, and camera choices across connected clips.
 
