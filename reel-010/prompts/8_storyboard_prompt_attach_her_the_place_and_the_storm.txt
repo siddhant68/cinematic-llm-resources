@@ -1,0 +1,16 @@
+Using the three attached images, draw the storyboard of one continuous vertical film scene that runs 15 seconds, laid out as six panels, 2 across and 3 down, with timings. The first image is the woman: the reference for her face (thick low brows with a small scar in the left one, grey-green eyes, strong straight nose, full lips, the small mole low on her left cheek), her long dark wavy hair, cream check shirt, rust tank top and worn jeans. The second image is the place at dusk: the lonely fuel stop with its flat lit canopy and two pumps, the curving two-lane desert road, the flat horizon and the power lines. The third image is the dust storm and her pale green station wagon: the reference for the storm's look and for the car.
+
+It should read like a real film pre-production board: six vertical 9:16 panels in a clean grid with thin black borders. On each panel, in small clean type: the panel number, its timecode, a short shot title in capitals and one short line of action. The pictures come first; the text is small but legible.
+
+The scene is built on one idea: the audience should feel each emotion before they understand why. Calm, then connection, then unease, then fear, then shock, then escape. Her action never resets between panels; only the camera and the framing change, getting closer as the emotion rises and then exploding outward.
+
+1 · 0:00–0:02 · ESTABLISH · Very wide, still camera. The fuel stop tiny under a huge clean dusk sky, her car under the canopy, her a small figure leaning on it. The horizon is completely clear.
+2 · 0:02–0:05 · CONNECT · Medium shot, slow push-in. She leans on the open door, eyes closed, face to the last warm light, a small private smile.
+3 · 0:05–0:08 · DISRUPT · Medium-wide, the camera drifts. The gold light turns brown, a hanging sign on the canopy starts to swing, dust snakes across the road, birds lift off the power line. She has not noticed yet. Still no storm visible.
+4 · 0:08–0:10 · REACT · Tight close-up. Her smile is gone, hair whipping across her face, eyes locked on something past the camera, a held breath. We still do not see it.
+5 · 0:10–0:12 · REVEAL · Wide reverse angle from behind her: a kilometre-high wall of dust swallowing the horizon and rolling toward the fuel stop.
+6 · 0:12–0:15 · ESCAPE · Low fast tracking shot in front of the car: the wagon tears down the road, headlights on, the dust wall filling everything behind it.
+
+Hold these fixed in all six panels: her face and outfit, the pale green wagon, the fuel stop and road layout, and one light direction (the sun just below the horizon ahead of her, then hidden by the storm). The storm must not appear anywhere in panels 1 to 4. No extra people, no text other than the panel labels, no logos, number plates or watermarks. Photoreal film-still style in every panel, natural analogue colour: dusk blue and peach at the start, rust and ochre at the end.
+
+Aspect ratio: 9:16 (vertical).

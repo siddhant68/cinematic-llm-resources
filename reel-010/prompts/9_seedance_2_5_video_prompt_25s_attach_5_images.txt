@@ -1,0 +1,32 @@
+TITLE AND ACT
+"DUST WALL" — one continuous 25-second vertical sequence in six shots. The feeling climbs one step per shot: curious, uneasy, tense, afraid, stunned, fleeing. Each shot is caused by the one before it. The woman's action never resets between shots; only the camera's framing, perspective and intensity evolve, getting closer as the feeling rises and bursting into motion at the end.
+
+LOCATION
+A lonely desert fuel stop at dusk. A two-lane road curves in from the camera side and runs straight to a flat, empty horizon. On the left of the road: one flat, rust-streaked canopy with warm white lights on its underside, two old pumps, a small shop behind, and a metal sign hanging from the canopy edge on two chains. Power lines follow the road. The sun is setting straight down the road; later the storm arrives from that same direction. This layout is fixed in every shot and never mirrors or rearranges.
+
+REFERENCE ASSIGNMENT
+Image 1 = the woman: strict identity lock on her face, her hair and everything she wears.
+Image 2 = her six-angle sheet: the same woman from other angles.
+Image 3 = the fuel stop and road at dusk.
+Image 4 = the dust storm and her pale green station wagon.
+Image 5 = the storyboard: follow its six panels, in order, with these timings. Its panel labels are notes for you only and never appear in the video.
+
+STYLE
+Photoreal live-action cinema, vertical 9:16, natural analogue film look with fine 35 mm grain. Colour moves from dusk blue and peach to dirty brown, then rust and ochre. One light source in world space: the low sun down the road, later replaced by the storm's diffuse amber glow from the same direction; the canopy lights are the only practical. Real physics: wind moves dust, hair and cloth; the car has weight. Native sound: evening quiet and a distant wind, chains creaking, wind building to a roar, engine and a door slam. No music, no dialogue.
+
+STORY
+A woman stops for a moment's peace at an empty fuel stop at sunset. The world around her changes before she notices, she feels the danger before we see it, the dust storm is revealed, and she escapes.
+
+CHARACTERS
+A woman in her early thirties. Preserve exact likeness from Image 1, stable face throughout, no beautification: thick low dark brows with a thin scar breaking the left one, deep-set grey-green eyes, strong straight nose, full lips with a fuller lower lip, a small mole low on her left cheek, a lopsided smile, warm olive skin, pores clearly visible, a little heat shine. Long dark-brown wavy hair with sun-warmed ends. Cream check shirt with sleeves pushed up over a rust tank top, worn light-blue jeans, thin gold chain, leather-strap watch. Her car: the pale green station wagon from Image 4, same body every shot.
+
+SHOT STRUCTURE
+(0s–3s) ESTABLISH — curious. Very wide, locked-off camera on the road shoulder. The fuel stop is small under a huge clean sky; she is a tiny figure leaning on the wagon under the canopy. The horizon is completely clear. The scale makes her vulnerable.
+(3s–8s) CONNECT — the first unease. The camera moves closer: a slow push-in to a medium shot at her eye level. She leans on the open driver's door, eyes closed, face tipped to the last warm light, breathes out, and the lopsided smile appears. A faint gust lifts a strand of hair; she does not open her eyes.
+(8s–13s) DISRUPT — tense. Medium-wide, the camera drifts slowly left while she stays in the same pose. Only the environment changes: the gold light dims to brown, the hanging sign starts to swing and creak, thin ribbons of dust slide across the road, birds lift off the power line all at once. Her hair begins to stir. She still has not noticed. No storm in frame.
+(13s–16s) REACT — afraid. Tight close-up on her face. Her eyes open, the smile drops, the breath catches and holds, her brows pull down, her eyes lock on something past the camera. Hair whips across her cheek, grit in the air, flat amber light on her face. We see her fear before we see the threat.
+(16s–20s) REVEAL — stunned. Wide reverse angle, low behind her. A real haboob fills the whole horizon: a rolling wall of reddish-brown dust about a kilometre high, swallowing the road and the power poles as it advances. She stands small in the foreground, one hand on the car door, then turns toward the driver's seat.
+(20s–25s) ESCAPE — fleeing. Continuous motion: she drops into the car, the door slams, and a low, fast tracking shot just ahead of the wagon follows it tearing down the road toward camera, headlights on, dust pouring from the wheels, the dust wall filling the whole frame behind her. The shot is still moving on the last frame.
+
+AVOID
+The storm visible before 16s, any text, numbers or labels copied from the storyboard, any change to her face or outfit, a different car, extra people or vehicles, on-screen text, logos, number plates, a tornado, smoke or fire instead of dust, slow motion, a frozen or static final frame.
