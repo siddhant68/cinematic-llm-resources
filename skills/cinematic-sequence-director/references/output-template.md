@@ -8,6 +8,9 @@ Keep this concise.
 
 - **Total duration:** [target]
 - **Generation plan:** [Clip 1 duration] + [Clip 2 duration] [+ optional Clip 3]
+- **Time budget:** [beat → minimum seconds, as a small table; sum × 1.2 ≤ clip length; about one beat per 4 s]
+- **Cut plan:** [deliberate cuts at named action beats, OR one take with one framing family and one gentle move]
+- **References:** [each image, what it governs, and its audit: eyelines, faces, sky and light; any storyboard labelled as a cut list or as moments inside one shot]
 - **Continuity authority:** [approved prior render / supplied start frame / script / references]
 - **Performance geography:** [fixed landmark map and zone assignments]
 - **Lighting geography:** [fixed source direction + progression]
@@ -73,6 +76,8 @@ Explain what camera changes do NOT imply about the performer's world position.
 [Literal choreography and performance.]
 
 [Camera response, lens/scale, direction, what the viewer should notice.]
+
+THE AIR: [what the wind, hair, cloth, grass and particles do in this block: gusts at named seconds, particle speed and where they end up. Write this line in every timed block.]
 
 [Lighting/physics only when they materially change.]
 

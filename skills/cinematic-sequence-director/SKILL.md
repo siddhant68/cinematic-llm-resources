@@ -1,6 +1,6 @@
 ---
 name: cinematic-sequence-director
-description: Direct flowing cinematic video-generation sequences from character references, environment references, scripts, prior rendered continuity, and example prompts. Use when ChatGPT needs to plan or rewrite one or more connected AI-video clips with strong camera coverage, choreography, lighting, spatial geography, prop continuity, transitions, performance arcs, or paste-ready prompts for models such as Seedance or Kling, especially when matching cinematic quality across scenes or preserving continuity between generated clips.
+description: Direct flowing cinematic video-generation sequences from character references, environment references, scripts, prior rendered continuity, and example prompts. Use when ChatGPT needs to plan or rewrite one or more connected AI-video clips with strong camera coverage, choreography, lighting, spatial geography, prop continuity, transitions, performance arcs, or paste-ready prompts for models such as Seedance or Kling, especially when matching cinematic quality across scenes or preserving continuity between generated clips. Also use it to budget how many beats fit in a clip's duration, to decide between a deliberate cut sequence and a true single take, and to plan storyboard and grid references.
 ---
 
 # Cinematic Sequence Director
@@ -12,6 +12,8 @@ Turn the user's source materials into a small number of **paste-ready cinematic 
 Preserve the freedom and flow of generative video. Use spatial and continuity constraints to stabilize the world, not to micromanage every frame.
 
 Read [references/director-playbook.md](references/director-playbook.md) for camera, lighting, choreography, continuity, complexity allocation, and evidence rules. Read [references/output-template.md](references/output-template.md) before drafting the final prompts.
+
+When the sequence has faces that must act, emotional changes, two people looking at each other, or dialogue, also load the `ai-performance-director` skill. This skill owns camera, structure, geography and time; that one owns the performance and the reference images that shape it.
 
 ## Input contract
 
@@ -89,7 +91,24 @@ Do not replace world-space anchors with only screen-left/screen-right when rever
 
 ### 3. Choose the generation architecture
 
-Design the total requested duration first.
+Design the total requested duration first, and budget it before writing any beat. Overloaded clips come out rushed: the model compresses every listed action to fit, and the result reads as hurried or mugging.
+
+**Time budget.** Every beat on screen is **cause → action → settle**. Use these minimums, measured on Seedance 2.5 renders:
+
+| Unit | Minimum on screen |
+|---|---|
+| Establish or connect (a look, a touch, a small smile) | 3–4 s |
+| Environment event building before it lands (gust, light change, rider approaching) | 2–3 s |
+| One face change (trigger → change → held face) | 3 s |
+| Laugh or big release | 2.5 s + 0.5 s settle |
+| One hand or prop verb (pluck, hand over, tuck) | 1–1.5 s each, + 0.5 s final hold |
+| One spoken line | words ÷ 2.5 per second, + 0.5 s before and after |
+| A shot, if you cut | at least 3.5 s; shots of 2.4–3.7 s felt choppy |
+
+- **Total = sum of the minimums × 1.2.** End on a 1–2 s held moment that is still moving.
+- **Rule of thumb: about one beat per 4 s.** A 13 s clip holds 3 beats; a 20 s clip holds 5.
+- **If the beats don't fit, drop beats. Never compress them.** Evidence: 7 beats in 20 s was rushed; the same story cut to 5 beats in 20 s landed.
+- Show the budget as a small table in the directorial map.
 
 - If the user specifies the number of clips/scenes, obey it.
 - If one requested sequence is longer or more complex than a reliable single generation, split it into the **fewest useful clips**.
@@ -183,6 +202,15 @@ Do not overcut. Let important movement phrases complete in readable coverage. Cl
 
 Treat a list of camera ideas as a **coverage priority**, not a demand that every idea become a separate hard cut inside the generation. Combine compatible phases into flowing coverage when duration is tight.
 
+**Cuts vs one take: what the model actually does** (Seedance 2.5, observed):
+
+- **A described shot list becomes hard cuts** at exactly the listed boundaries. A six-shot structure gave 5 cuts.
+- **A described big framing change becomes a cut even when the prompt says "no cuts".** Examples: push in to a close-up, pull back to a two-shot, push in again. Asking for three such moves gave three cuts.
+- **A true single take needs near-constant framing:** one slow move in one direction (for example a gentle push-in from a medium to a medium-close). That held as one take.
+- So decide first: **a cut sequence** (plan each cut on an action beat, each shot at least 3.5 s, with action continuing across the cut), or **one take** (one framing family, one gentle move). Don't ask for "no cuts" and then describe several shot sizes.
+
+**The camera must not follow particles** such as petals, dust, sparks or leaves. A camera that tracks them makes them look frozen in the frame. Hold the camera and let them cross the frame and leave it.
+
 ### 8. Light the world, not each shot independently
 
 Derive the lighting from script time, weather, and environment.
@@ -198,6 +226,14 @@ Define:
 When the camera crosses to another side, describe how the **same fixed light source** now becomes side-light, backlight, rim light, etc. Never flip the sun merely to flatter a new angle.
 
 Use light to support the performance arc. Keep it physically plausible and visually specific.
+
+**Describe the air in every time block.** Each timed block of the prompt gets an "AIR" line: what the wind, hair, cloth, grass and particles are doing at that moment. Without it, hair freezes into one shape and particles hang.
+- **Wind comes as gusts at named seconds with calm in between.** A "steady wind" renders as one frozen windswept pose.
+- **For objects that break or fly, state all three:**
+  - how they break: "torn apart in their hands, never as one bunch";
+  - how fast they move: "each crosses the frame in about a second, blurred";
+  - how they end: "falls and lands on the bonnet".
+- **Rim-light moving hair and fabric against a darker background** so the motion reads.
 
 ### 9. Protect identity and continuity without suffocating motion
 
@@ -228,6 +264,24 @@ However, connect clips with an explicit continuity opening such as:
 
 When a clean image handoff is available and useful, use it. Do not force a poor, motion-blurred, or heavily occluded last frame as a start image merely because it is chronologically last; an editorially concealed transition may be more robust.
 
+A clean frame from an approved earlier take makes an excellent start image for a retake: it keeps the look, the staging and the identities identical.
+
+### 10b. Storyboards and grids as references
+
+- **A multi-panel shot map is a cut list.** The model cuts at every panel boundary. Use one only when you want those cuts. It is excellent for a deliberate sequence (a six-beat thriller board worked as intended).
+- **A 2×2 detail grid labelled as moments inside one shot adds no cuts.** Label it "four moments inside ONE continuous shot; it adds no shots and no cuts". It gives large, readable panels for the hardest moment: hand and prop work, or a physical event in phases. Draw the end state that must be visible (e.g. "hand comes away, the poppy is clearly visible").
+- **Every panel leaks everything in it:** sky, light, faces, eyelines, props. "Use it for the wind only" did not stop a grid's storm clouds from darkening the whole sky. Every panel must be right in every respect, or it must not be attached.
+- **Don't attach stills of fast motion** (petals or dust frozen mid-air). They come back as frozen motion. Describe speed in the text instead.
+- **Always add:** "Its panel labels are notes for you only and never appear in the video." No label text leaked with this line.
+- Audit every reference before upload: eyelines, expressions, sky and light, and whether anything covers what must be seen. The `ai-performance-director` skill has the full checklist.
+
+### 10c. Two people in one frame
+
+- **Stage them so the eyeline is obvious:** side-on, or clearly at frame left and frame right.
+- **Write every eyeline by screen direction and target:** "she looks up and to frame right, into his eyes".
+- **Never use "the lens" to stand for a person.** Always add "neither of them looks into the lens".
+- A point-of-view camera that still shows the other person's shoulder makes the looker stare at the audience instead of at the partner.
+
 ### 11. Learn only from evidence that actually exists
 
 Treat user-approved generated results as valuable empirical evidence, but generalize conservatively.
@@ -255,6 +309,12 @@ The eyes often change before the head and body. Let posture and attention commun
 Before returning the answer, verify all of the following:
 
 - total durations approximately sum to the user's target;
+- the time-budget table fits (about one beat per 4 s, face changes at least 3 s apart, every shot at least 3.5 s); if not, beats were cut rather than compressed;
+- the cut plan is explicit: either a deliberate cut sequence, or one take with near-constant framing, never "no cuts" alongside several shot sizes;
+- no multi-panel shot map is attached unless its cuts are wanted; detail grids are labelled as moments inside one shot;
+- every attached reference was audited for eyelines, expressions, sky and light, and nothing that contradicts the text is attached;
+- every time block has an AIR line; wind comes in timed gusts; particles have a speed and an ending; the camera never follows particles;
+- two-person eyelines are written by screen direction, and nobody looks into the lens;
 - required choreography/actions are covered in correct order;
 - named movements are paired with clear physical descriptions;
 - each performer has a predictable world-space position;

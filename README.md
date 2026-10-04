@@ -4,7 +4,13 @@ Images and prompts from the **@cinematic_llm** short films and their making-of t
 
 Explore [Reel 006](reel-006/README.md), [Reel 007](reel-007/README.md), [Reel 008](reel-008/README.md), [Reel 010](reel-010/README.md), [Reel 011](reel-011-lighting-emotion/README.md), and [Reel 013](reel-013/README.md). Each prompt is an individual text file you can copy. The generated reference images, storyboards, and panels are in their Reel folders.
 
-The [Cinematic Sequence Director skill](skills/cinematic-sequence-director/SKILL.md) is the directing playbook used to write the two video prompts. It fixes set geography, lighting, prop continuity, and camera choices across connected clips.
+## Skills
+
+Three skills from our film work. Each is a folder you can copy into your own skills directory.
+
+- [Cinematic Stills](skills/cinematic-stills/SKILL.md): script to cast to worlds to angle grids to storyboards, with the ChatGPT templates we used and a realism audit.
+- [Cinematic Sequence Director](skills/cinematic-sequence-director/SKILL.md): the directing playbook for connected video prompts. It fixes set geography, lighting, prop continuity, camera choices and the time budget across clips.
+- [AI Performance Director](skills/ai-performance-director/SKILL.md): how to get believable acting, eyelines, hair and timing out of a video model, with the evidence from our takes.
 
 Created for [@cinematic_llm](https://www.instagram.com/cinematic_llm/). AI imagery is illustrative. Prompts describe the process used for this specific film; results will vary with models and reference images.
 
