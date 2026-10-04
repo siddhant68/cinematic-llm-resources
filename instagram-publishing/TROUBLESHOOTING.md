@@ -18,6 +18,8 @@ The scripts use visible Edge UI labels. Instagram can rename buttons, add notice
 | `share_clicked` but no final URL | Inspect profile for a new Reel/post and check account status. Do not automatically retry. |
 | Instagram says post could not be shared or shows an appeal screen | Stop the upload, preserve evidence, and resolve the account status. After access returns, check for a duplicate before any retry. |
 | AI label switch count changes | Inspect the new UI manually, set the intended label, then update the script's targeting. Do not guess which switch to click. |
+| Video looks small inside the Reel | Check the layout before the upload: a clip drawn as a card on a dark canvas looks small even in a full 1080x1920 file. Make the clip edge to edge in the edit, and upload the full-frame file rather than a feed-safe copy unless a 4:5 feed preview is the goal. |
+| A published Reel needs a different video or cover | Instagram's web editor only changes the caption and AI label. Delete the post (check the caption text first, as `delete_posts` does) and upload again with a new manifest, or change the cover in the mobile app (Edit, then cover). Confirm with the account owner before deleting. |
 | Own comment cannot be pinned in Edge | Post and verify the comment, record it as unpinned, and use the Instagram mobile app if pinning is needed. The tested Edge menu showed Delete and Cancel only. |
 | Comment-to-DM CTA is used | This repository does not automate DMs. Fulfil the offer manually or connect and test a separate approved service before promising automation. |
 
