@@ -1,0 +1,11 @@
+THE PERFORMANCE BLOCK (from the clip that went in the film; the brackets are the film's specifics, swap in yours)
+
+She shows what she feels with her body: posture, arms, where she looks, her breath. Her face stays calm and natural. There is only one change in her face in the whole shot: [the small smile she cannot stop at the end], at about a third of its full size. Her eyes move first, her head follows, then her body. Between changes she is simply still, breathing, with her hair moving.
+
+THE BAN LIST (the same prompt's hard constraints)
+
+Her face stays natural. No pouting or pushed-out lips, no squinting, no raised eyebrow, no eye-roll, no nose scrunch, no wide grin, no laugh, no lips moving as if talking.
+
+THE EYELINES (the same prompt)
+
+Write each eyeline by screen direction, for example: "she looks up and to frame right, straight into his eyes". Never use "the lens" to mean a person. Add: "Neither of them ever looks into the lens."

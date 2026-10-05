@@ -1,0 +1,16 @@
+Using the five attached images, draw the storyboard of one continuous vertical film scene that runs 20 seconds, laid out as six panels, 2 across and 3 down, with timings. The first image is the woman: the reference for her face, freckles and moles, her shoulder-length loose copper-auburn curls and her sunflower-yellow strapped sundress. The second image is the man: his face, dark messy curls, moustache, silver hoop earring, cracked brown leather jacket, white T-shirt and jeans. The third image is panel 3, the fourth image is panel 4, and the fifth image is panel 5: keep those three moments as they are. Everything happens beside the same faded cherry-red car on a gravel lane in an English wildflower field (red poppies, white daisies, blue cornflowers) under a big sky of white clouds, at a windy noon, with the sun behind her from frame left and the wind blowing from frame left to frame right.
+
+It should read like a real film pre-production board: six vertical 9:16 panels in a clean grid with thin black borders. On each panel, in small clean type: the panel number, its timecode, a short shot title in capitals and one short line of action. The pictures come first; the text is small but legible.
+
+The scene is built on one idea: we feel the wind coming before it arrives, we see her face react before we see what the wind did, and the loss turns into a laugh. Their action never resets between panels; only the camera changes.
+
+1 · 0:00–0:03 · CONNECT · Medium two-shot from the side. She sits on the bonnet on the left; he stands on the right holding a small bouquet of poppies, daisies and cornflowers out to her; their fingertips meet on the stems; she smiles softly at him.
+2 · 0:03–0:06 · DISRUPT · Wide and low from the field on the left: a gust rolls toward the car through the flowers as a visible wave, poppies and grass bowing flat one after another, a cloud shadow racing ahead, petals peeling off the verge. The two are small by the car, still looking at each other.
+3 · 0:06–0:09 · REACT · Close-up of her as the gust hits: hair streaming right, eyes wide, looking up to the right. (The third image.)
+4 · 0:09–0:12 · REVEAL · Low wide looking up: the bouquet bursts into the sky, both of them small below, looking up. (The fourth image.)
+5 · 0:12–0:16 · TURN · Medium two-shot: he stares at his empty hand, crestfallen; she laughs at him. (The fifth image.)
+6 · 0:16–0:20 · PAYOFF · Medium close two-shot from the side: she tucks a single red poppy behind his ear, next to his silver hoop; he is trying not to laugh, his eyes on her; she smiles at him; a few petals drift down between them.
+
+Hold these fixed in all six panels: both faces and outfits, the red car, the field, the sun behind her from frame left and the wind direction. No flowers in the sky before panel 4. Neither of them looks into the lens. No extra people, no text other than the panel labels, no logos, number plates or watermarks. Photoreal film-still style in every panel, natural analogue colour with true reds, yellows and blues and soft greens.
+
+Aspect ratio: 9:16 (vertical).

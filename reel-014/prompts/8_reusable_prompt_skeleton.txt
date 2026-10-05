@@ -1,0 +1,25 @@
+THE PROMPT SKELETON (the structure of the wind prompt, with the film's specifics replaced by brackets)
+
+ONE continuous [20]-second vertical 9:16 shot, NO cuts. [Photoreal; the place and the situation in two lines.]
+
+REFERENCES
+Image 1 = [the opening frame]: begin exactly on it.
+Image 2 = [her identity].
+Image 3 = [her angle sheet].
+Image 4 = [him].
+Image 5 = [her face at about X s]: expression only, not a separate shot.
+
+GEOGRAPHY, NEVER CHANGES
+[Who sits or stands where; where the sun and the wind come from.]
+
+TIME BLOCKS (about one beat per 4 s; a shot you cut to needs at least 3.5 s)
+(0.0-4.5 s) [BEAT, one line]. [One action: cause, action, settle.] THE AIR: [what the wind, hair and petals do right now]. HER FACE: [a timed chain, eyes then breath then mouth then head].
+(4.5-8.0 s) [BEAT] ...
+
+SOUND
+[Wind, her breath, the footsteps. No music, nobody speaks.]
+
+AVOID
+[Only this take's likely failures, kept short.]
+
+Notes from the six generations: write a weather line (THE AIR) in every block; name how objects break ("torn apart in their hands, never as one bunch"); one slow move in one direction for a true single take, because big framing changes become cuts; a multi-panel board is a cut list, a 2x2 grid of one moment adds no cuts.
