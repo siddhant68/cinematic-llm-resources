@@ -2,7 +2,7 @@
 
 Images and prompts from the **@cinematic_llm** short films and their making-of tutorials.
 
-Explore [Reel 006](reel-006/README.md), [Reel 007](reel-007/README.md), [Reel 008](reel-008/README.md), [Reel 010](reel-010/README.md), [Reel 011](reel-011-lighting-emotion/README.md), [Reel 013](reel-013/README.md), and [Reel 014](reel-014/README.md) (HOLD STILL: how to control over-acting in AI characters). Each prompt is an individual text file you can copy. The generated reference images, storyboards, and panels are in their Reel folders.
+Explore [Reel 006](reel-006/README.md), [Reel 007](reel-007/README.md), [Reel 008](reel-008/README.md), [Reel 010](reel-010/README.md), [Reel 011](reel-011-lighting-emotion/README.md), [Reel 013](reel-013/README.md), [Reel 014](reel-014/README.md) (HOLD STILL: how to control over-acting in AI characters), and [Reel 018](reel-018-ai-ugc-ad/README.md) (an AI UGC ad: the full video prompt, the 9-line blueprint and the image prompts). Each prompt is an individual text file you can copy. The generated reference images, storyboards, and panels are in their Reel folders.
 
 ## Skills
 

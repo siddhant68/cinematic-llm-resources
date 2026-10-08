@@ -1,0 +1,40 @@
+LOOK
+Front camera of a recent flagship phone, wide selfie lens (about 23 mm equivalent), 30 fps, natural 1/60 s motion blur. Hazy winter-morning daylight on an open rooftop, around 9 am, soft open shade falling across half her face, no hard golden rim light. Natural colour, ordinary phone exposure with small auto-exposure and white-balance shifts. Raw phone-footage realism: skin with pores, fine facial fuzz, ordinary under-eye texture and small flaws. Never a beauty filter, retouching, HDR look, over-sharpening or a graded cinema look. English spoken with an Indian accent. 30 seconds.
+
+WHAT THIS IS
+A casual recommendation she films for her followers while sitting in the sun on the terrace of her family's South Delhi house: a cane chair, a wooden swing seat with a block-print cushion, a worn cream stone parapet with bougainvillea and marigold pots, a side table with a brass tray (small oil bowl, wooden comb, steel cup of chai), a water tank and wires on the next roof, hazy trees beyond, a few pigeons. She has used a hair oil for a while and explains why it stayed in her routine. It must feel like a real post, not a hair-care advert.
+
+IMAGES
+@image1 = HER. Appearance only: keep her face, hair, age, skin tone and build identical in every cut.
+@image2 = THE BOTTLE. Appearance only: keep the packaging, size, colours, cap and logo placement identical every time it is on screen.
+
+CAMERA
+She holds the phone herself, arm out, and we look through it. Keep the natural arm-held wobble: a faint rise and fall from her breathing, a slight roll of the wrist, a gentle sway, fine jitter and quick reframing nudges. Nothing gimbal-smooth.
+
+CUTS
+Six casual hard jump cuts. Every change of view is instant: sometimes tighter, sometimes wider, sometimes from another spot on the terrace. No morphing, gliding or dissolving between set-ups.
+
+TIMELINE
+0.0-4.0 s: Close selfie on the cane chair, the bottle already loose in her hand. She says: "Okay, I bought this only because Instagram wouldn't stop showing it to me." A tiny eye-roll on "wouldn't stop".
+CUT
+4.0-8.4 s: Phone a little further away. She sets the bottle on the brass tray next to the oil bowl: "And I was sure it'd join the other bottles in my cupboard that I never open."
+CUT
+8.4-13.0 s: Closer again. She picks the bottle back up and glances at it: "But... annoyingly? I actually like it." A small held-back smile, never beaming.
+CUT
+13.0-18.0 s: She puts a little oil on her fingertips and works it into the parting and crown, half looking at the screen, half at what she is doing: "It's light, it isn't greasy like the heavy oils I grew up with, my hair just feels softer, and I actually remember to use it."
+CUT
+18.0-23.8 s: New position, standing at the parapet with the bougainvillea behind her. Dry and amused: "And that's my only test. If it's a hassle, it's gone in a week."
+CUT
+23.8-30.0 s: Final close framing, the bottle held near her shoulder (not pushed at the lens): "It's the Mamaearth onion oil. Two weeks now. And this is my hair for tonight's party." A small, pleased half-smile on the last line, fingertips brushing the ends of her hair.
+
+PERFORMANCE
+Warm and lightly amused. Uneven blinks, tiny eyebrow movements, a slightly lopsided mouth, real breathing, small glances away as she thinks (once toward the sun). She does not smile all the time. Gestures stay small and tied to the sentence. No presenter voice. Natural Indian-English pitch and rhythm. Her hair stays natural: flat at the roots and a little oily-looking once the oil goes in, a few strands lifting in the breeze.
+
+VOICE LOCK
+Only @image1 talks, and she says nothing except the lines above, in English. No extra filler, greeting, narration, off-screen voice or ad-libs.
+
+SOUND
+Phone-microphone audio on an open rooftop: pigeons, distant colony traffic, a far-off pressure-cooker whistle, a light breeze, the cap clicking, cloth movement. No music.
+
+AVOID
+A glossy hair-advert look, studio or beauty light, ring-light catchlights, smoothed skin. A salon blow-dry or big styled volume. The bottle floating, glowing or changing its packaging. Over-acting, a huge smile, repeated nods, pointing, non-stop hand movement, frozen "avatar" pauses. Face drift between cuts. Cinematic push-ins, gimbal or dolly moves, artificial shallow focus. Morphing between cuts. Generated captions, UI or subtitles.
