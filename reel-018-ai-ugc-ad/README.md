@@ -23,4 +23,4 @@ A 30-second AI UGC ad (a woman recommending a hair oil on a South Delhi rooftop)
 ## Notes
 - The product photo used for the ad is not included: bring your own, and only use a real brand's name or pack with permission.
 - Model results vary with the references. These are the exact texts used for this ad, in my wording; adapt freely.
-- Posted on [@cinematic_llm](https://www.instagram.com/cinematic_llm/).
+- The reel: [instagram.com/cinematic_llm/reel/DePiQb8BNrA](https://www.instagram.com/cinematic_llm/reel/DePiQb8BNrA/) on [@cinematic_llm](https://www.instagram.com/cinematic_llm/).
